@@ -863,15 +863,24 @@ section{padding:64px 32px}
 <script>
 function showVersion(v){
   const isA = v==='a';
-  document.getElementById('org-a').style.display = isA ? 'flex' : 'none';
-  document.getElementById('org-b').style.display = isA ? 'none' : 'flex';
-  document.getElementById('desc-a').style.display = isA ? 'block' : 'none';
-  document.getElementById('desc-b').style.display = isA ? 'none' : 'block';
-  document.getElementById('btn-a').style.background = isA ? 'var(--purple)' : '#fff';
-  document.getElementById('btn-a').style.color = isA ? '#fff' : 'var(--purple)';
-  document.getElementById('btn-b').style.background = isA ? '#fff' : 'var(--green)';
-  document.getElementById('btn-b').style.color = isA ? 'var(--purple)' : '#fff';
+  const orgA = document.getElementById('org-a');
+  const orgB = document.getElementById('org-b');
+  const descA = document.getElementById('desc-a');
+  const descB = document.getElementById('desc-b');
+  const btnA = document.getElementById('btn-a');
+  const btnB = document.getElementById('btn-b');
+  if(!orgA||!orgB||!descA||!descB||!btnA||!btnB) return;
+  orgA.style.display = isA ? 'flex' : 'none';
+  orgB.style.display = isA ? 'none' : 'flex';
+  descA.style.display = isA ? 'block' : 'none';
+  descB.style.display = isA ? 'none' : 'block';
+  btnA.style.background = isA ? 'var(--purple)' : '#fff';
+  btnA.style.color = isA ? '#fff' : 'var(--purple)';
+  btnB.style.background = isA ? '#fff' : 'var(--green)';
+  btnB.style.color = isA ? '#fff' : '#fff';
+  btnB.style.color = isA ? 'var(--purple)' : '#fff';
 }
+window.showVersion = showVersion;
 
   const card=document.getElementById(id);
   const body=document.getElementById(id+'-body');
@@ -882,11 +891,14 @@ function showVersion(v){
 }
 // open all by default
 document.addEventListener('DOMContentLoaded',()=>{
+  // open all problem cards by default
   document.querySelectorAll('.problem-card').forEach(c=>{
     c.classList.add('open');
     const body=document.getElementById(c.id+'-body');
     if(body)body.classList.add('open');
   });
+  // ensure version A is shown by default
+  showVersion('a');
 });
 // smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
