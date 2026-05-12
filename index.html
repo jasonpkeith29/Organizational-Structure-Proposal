@@ -223,7 +223,7 @@ section{padding:64px 32px}
     <div class="problem-grid">
 
       <div class="problem-card" id="p1">
-        <div class="problem-header" onclick="toggleProblem('p1')">
+        <div class="problem-header">
           <div class="problem-sev" style="background:var(--red)"></div>
           <div class="problem-title-wrap">
             <div class="problem-title">Behavioral analytics is cobbled together — and the org is asking for more</div>
@@ -245,7 +245,7 @@ section{padding:64px 32px}
       </div>
 
       <div class="problem-card" id="p2">
-        <div class="problem-header" onclick="toggleProblem('p2')">
+        <div class="problem-header">
           <div class="problem-sev" style="background:var(--red)"></div>
           <div class="problem-title-wrap">
             <div class="problem-title">Data View lacks product foundation — and no one owns the Snowflake relationship</div>
@@ -267,7 +267,7 @@ section{padding:64px 32px}
       </div>
 
       <div class="problem-card" id="p3">
-        <div class="problem-header" onclick="toggleProblem('p3')">
+        <div class="problem-header">
           <div class="problem-sev" style="background:var(--amber)"></div>
           <div class="problem-title-wrap">
             <div class="problem-title">Data teams are modeling and pushing to Snowflake with no guardrails and no shared platform</div>
@@ -289,7 +289,7 @@ section{padding:64px 32px}
       </div>
 
       <div class="problem-card" id="p4">
-        <div class="problem-header" onclick="toggleProblem('p4')">
+        <div class="problem-header">
           <div class="problem-sev" style="background:var(--amber)"></div>
           <div class="problem-title-wrap">
             <div class="problem-title">We've built a strong reporting foundation — but custom analytics remains out of reach for smaller practices</div>
@@ -311,7 +311,7 @@ section{padding:64px 32px}
       </div>
 
       <div class="problem-card" id="p5">
-        <div class="problem-header" onclick="toggleProblem('p5')">
+        <div class="problem-header">
           <div class="problem-sev" style="background:var(--gray)"></div>
           <div class="problem-title-wrap">
             <div class="problem-title">Data pipelines need tighter standards, observability, and speed</div>
@@ -460,8 +460,8 @@ section{padding:64px 32px}
 
     <!-- Version toggle -->
     <div style="display:flex;gap:0;margin-bottom:24px;border:1.5px solid var(--purple-mid);border-radius:10px;overflow:hidden;max-width:500px">
-      <button id="btn-a" onclick="showVersion('a')" style="flex:1;padding:10px 16px;font-size:13px;font-weight:600;border:none;cursor:pointer;background:var(--purple);color:#fff;font-family:var(--font)">Version A — Ray as SME</button>
-      <button id="btn-b" onclick="showVersion('b')" style="flex:1;padding:10px 16px;font-size:13px;font-weight:600;border:none;cursor:pointer;background:#fff;color:var(--purple);font-family:var(--font)">Version B — Ray on the team</button>
+      <button id="btn-a" style="flex:1;padding:10px 16px;font-size:13px;font-weight:600;border:none;cursor:pointer;background:var(--purple);color:#fff;font-family:var(--font)">Version A — Ray as SME</button>
+      <button id="btn-b" style="flex:1;padding:10px 16px;font-size:13px;font-weight:600;border:none;cursor:pointer;background:#fff;color:var(--purple);font-family:var(--font)">Version B — Ray on the team</button>
     </div>
 
     <!-- Version A description -->
