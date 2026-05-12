@@ -451,9 +451,27 @@ section{padding:64px 32px}
           Suhas ↔ Lindsey — Data Lake feeds Snowflake; aligned on governance, ingestion standards, and platform cost<br>
           Bridget ↔ Alicia — Behavioral intelligence and client analytics serve the analytics org; strategy co-designed<br>
           Jason ↔ Snowflake — Vendor relationship held directly until dedicated strategist hired<br>
-          Jason ↔ AES — Connective tissue between platform and analytics surface; owned directly until IC in place
+          Jason ↔ AES — Connective tissue between platform and analytics surface; owned directly until IC in place<br>
+          Ray Cook ↔ AES — Ray's team runs Airflow workflows today and is the primary real-world test case for the self-serve platform; his team's needs define what good looks like<br>
+          Ray Cook ↔ Bridget — Ray's perspective on AI-driven reporting shapes product direction for both internal and external analytics; this relationship persists beyond any individual hire
         </div>
       </div>
+    </div>
+
+    <!-- Version toggle -->
+    <div style="display:flex;gap:0;margin-bottom:24px;border:1.5px solid var(--purple-mid);border-radius:10px;overflow:hidden;max-width:500px">
+      <button id="btn-a" onclick="showVersion('a')" style="flex:1;padding:10px 16px;font-size:13px;font-weight:600;border:none;cursor:pointer;background:var(--purple);color:#fff;font-family:var(--font)">Version A — Ray as SME</button>
+      <button id="btn-b" onclick="showVersion('b')" style="flex:1;padding:10px 16px;font-size:13px;font-weight:600;border:none;cursor:pointer;background:#fff;color:var(--purple);font-family:var(--font)">Version B — Ray on the team</button>
+    </div>
+
+    <!-- Version A description -->
+    <div id="desc-a" style="background:#F5F3FF;border:1.5px solid var(--purple-mid);border-radius:10px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:#3C3489;line-height:1.7">
+      <strong>Version A — Ray as SME and contributor.</strong> Ray stays in Alicia's org. He has formally named working relationships with your team across AES and AI reporting — structured, visible, and explicit — but he's not on your headcount. Lower friction to execute. Alicia retains him. His involvement is real but not exclusive.
+    </div>
+
+    <!-- Version B description -->
+    <div id="desc-b" style="display:none;background:#E1F5EE;border:1.5px solid var(--green);border-radius:10px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:var(--green-dark);line-height:1.7">
+      <strong>Version B — Ray in product, on your team.</strong> Ray moves onto your team as a senior IC. He owns AES governance and DAG workflows, and informs the AI reporting product direction. The AES placeholder disappears — replaced immediately by a real person with a real mandate. Higher friction to execute given the Alicia dynamic, but the strongest possible org from day one.
     </div>
 
     <div class="legend">
@@ -698,14 +716,18 @@ section{padding:64px 32px}
             </div>
           </div>
           <div class="own-group">
-            <div class="own-group-label" style="color:var(--blue-dark)">AI-Native Reporting PM leads (hire #2)</div>
+            <div class="own-group-label" style="color:var(--blue-dark)">Operational Reporting Platform &amp; AI Reporting PM leads (hire #2)</div>
             <div class="chips">
-              <span class="chip chip-o">AI reporting interface strategy</span>
-              <span class="chip chip-o">NL querying product vision</span>
-              <span class="chip chip-o">Client self-serve chart creation</span>
+              <span class="chip chip-a">Operational Reporting Platform</span>
+              <span class="chip chip-m">Report Library</span>
+              <span class="chip chip-m">Report Builder</span>
+              <span class="chip chip-m">Report Inbox</span>
               <span class="chip chip-d">Insights Dashboards — evolved</span>
               <span class="chip chip-d">Reporting &amp; Analytics Hub</span>
+              <span class="chip chip-s">Legacy platform migration path</span>
+              <span class="chip chip-p">AI-driven reporting — long-term destination</span>
             </div>
+            <div style="font-size:11px;color:var(--text-sec);line-height:1.6;margin-top:6px;padding:6px 8px;background:var(--purple-light);border-radius:6px;border-left:3px solid var(--purple-mid)">The expectation is that over time the Operational Reporting Platform evolves into an AI-driven experience — where clients get the answers they need without navigating pre-built reports. This role owns both the platform as it exists today and the vision for where it goes.</div>
           </div>
           <div class="own-group" style="border:1.5px dashed #1D9E75;border-radius:8px;padding:8px 10px;background:#F5FFFA">
             <div class="own-group-label" style="color:var(--green-dark)">Key collaborator</div>
@@ -839,7 +861,18 @@ section{padding:64px 32px}
 </section>
 
 <script>
-function toggleProblem(id){
+function showVersion(v){
+  const isA = v==='a';
+  document.getElementById('org-a').style.display = isA ? 'flex' : 'none';
+  document.getElementById('org-b').style.display = isA ? 'none' : 'flex';
+  document.getElementById('desc-a').style.display = isA ? 'block' : 'none';
+  document.getElementById('desc-b').style.display = isA ? 'none' : 'block';
+  document.getElementById('btn-a').style.background = isA ? 'var(--purple)' : '#fff';
+  document.getElementById('btn-a').style.color = isA ? '#fff' : 'var(--purple)';
+  document.getElementById('btn-b').style.background = isA ? '#fff' : 'var(--green)';
+  document.getElementById('btn-b').style.color = isA ? 'var(--purple)' : '#fff';
+}
+
   const card=document.getElementById(id);
   const body=document.getElementById(id+'-body');
   const isOpen=card.classList.contains('open');
