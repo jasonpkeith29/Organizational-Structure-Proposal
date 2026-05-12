@@ -455,14 +455,15 @@ section{padding:64px 32px}
           <div class="p-role">Executive Director, Product Management<br>Data &amp; Analytics Platform · 4 direct reports</div>
         </div>
         <div class="vert"></div>
-        <div style="width:720px;height:2px;background:var(--border)"></div>
-        <div style="display:flex;width:720px;justify-content:space-around">
-          <div class="vert"></div><div class="vert"></div><div class="vert"></div><div class="vert"></div>
+        <div style="width:900px;max-width:100%;height:2px;background:var(--border)"></div>
+        <div style="display:flex;width:900px;max-width:100%;justify-content:space-around">
+          <div class="vert"></div><div class="vert"></div><div class="vert"></div><div class="vert"></div><div class="vert"></div>
         </div>
 
-        <!-- Directs -->
-        <div class="directs-row" style="max-width:720px;align-items:flex-start">
+        <!-- Directs — 5 columns -->
+        <div class="directs-row" style="max-width:900px;align-items:flex-start">
 
+          <!-- Behavioral Analytics -->
           <div class="direct-col" style="gap:0">
             <div class="person-card c-hire" style="width:100%">
               <div class="p-name">Open hire</div>
@@ -471,19 +472,24 @@ section{padding:64px 32px}
             </div>
           </div>
 
+          <!-- AES interim — no one underneath -->
           <div class="direct-col" style="gap:0">
             <div class="person-card c-interim" style="width:100%">
               <div class="p-name">AES &amp; Platform IC</div>
               <div class="p-role">Data creation &amp; platform enablement</div>
               <div class="p-badge" style="background:var(--purple-light);border-color:var(--purple-mid);color:#3C3489">Jason interim</div>
             </div>
-            <div class="vert"></div>
+          </div>
+
+          <!-- Suhas — own lane -->
+          <div class="direct-col" style="gap:0">
             <div class="person-card c-suhas" style="width:100%">
               <div class="p-name">Suhas Vasu</div>
               <div class="p-role">Sr. PM · Data View &amp; Snowflake Strategy</div>
             </div>
           </div>
 
+          <!-- Bridget -->
           <div class="direct-col" style="gap:0">
             <div class="person-card c-bridget" style="width:100%">
               <div class="p-name">Bridget Burdick</div>
@@ -497,6 +503,7 @@ section{padding:64px 32px}
             </div>
           </div>
 
+          <!-- Vijay -->
           <div class="direct-col" style="gap:0">
             <div class="person-card c-vijay" style="width:100%">
               <div class="p-name">Vijay Rajagopal</div>
@@ -777,14 +784,18 @@ function toggleProblem(id){
   const card=document.getElementById(id);
   const body=document.getElementById(id+'-body');
   const isOpen=card.classList.contains('open');
-  // close all
   document.querySelectorAll('.problem-card').forEach(c=>c.classList.remove('open'));
   document.querySelectorAll('.problem-body').forEach(b=>b.classList.remove('open'));
-  if(!isOpen){
-    card.classList.add('open');
-    body.classList.add('open');
-  }
+  if(!isOpen){card.classList.add('open');body.classList.add('open');}
 }
+// open all by default
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.problem-card').forEach(c=>{
+    c.classList.add('open');
+    const body=document.getElementById(c.id+'-body');
+    if(body)body.classList.add('open');
+  });
+});
 // smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
