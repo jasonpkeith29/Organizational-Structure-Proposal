@@ -27,13 +27,13 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .nlinks a{font-size:12px;color:var(--tx2);text-decoration:none}
 .nlinks a:hover{color:var(--pu)}
 
-.sec{padding:60px 32px;display:block}
+.sec{padding:60px 32px}
 .inner{max-width:1000px;margin:0 auto}
 .sl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
 .st{font-size:26px;font-weight:600;line-height:1.3;margin-bottom:8px}
 .ss{font-size:14px;color:var(--tx2);line-height:1.7;max-width:640px;margin-bottom:24px}
 
-.hero{background:linear-gradient(135deg,#1a1560,#2d27a0,#534AB7);color:#fff;padding:80px 32px;display:block}
+.hero{background:linear-gradient(135deg,#1a1560,#2d27a0,#534AB7);color:#fff;padding:80px 32px}
 .hero .sl{color:rgba(255,255,255,.6)}
 .hero .st{font-size:36px;color:#fff;max-width:560px}
 .hero .ss{color:rgba(255,255,255,.75);font-size:15px;margin-top:12px}
@@ -42,6 +42,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .hstn{font-size:26px;font-weight:600;color:#fff}
 .hstl{font-size:11px;color:rgba(255,255,255,.65);margin-top:3px;line-height:1.4}
 
+/* Problems */
 .pgrid{display:flex;flex-direction:column;gap:10px;margin-top:4px}
 .prob{border-radius:10px;border:1px solid var(--bo);overflow:hidden}
 .ph{display:flex;gap:12px;align-items:flex-start;padding:14px 18px}
@@ -65,13 +66,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .reldesc{font-size:12px;color:var(--tx2);line-height:1.5}
 .relown{font-size:11px;color:var(--tx3);margin-top:5px}
 
-.fbar{display:flex;border:1px solid var(--bo);border-radius:10px;overflow:hidden;margin:20px 0 6px;flex-wrap:wrap}
-.fs{flex:1;min-width:150px;padding:12px 14px;border-right:1px solid var(--bo)}
+/* Structure */
+.fbar{display:flex;border:1px solid var(--bo);border-radius:10px;overflow:hidden;margin:20px 0 6px;flex-wrap:wrap;align-items:stretch}
+.fs{flex:1;min-width:150px;padding:12px 14px;border-right:1px solid var(--bo);display:flex;flex-direction:column}
 .fs:last-child{border-right:none}
-.fsn{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.55;margin-bottom:3px}
-.fst{font-size:12px;font-weight:600;margin-bottom:3px}
-.fsd{font-size:11px;opacity:.7;line-height:1.4;margin-bottom:5px}
-.fstag{font-size:9px;padding:1px 6px;border-radius:8px;border:1px solid;display:inline-block}
+.fsn{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.55;margin-bottom:4px}
+.fst{font-size:12px;font-weight:600;margin-bottom:4px;line-height:1.3}
+.fsd{font-size:11px;opacity:.7;line-height:1.4;margin-bottom:8px;flex:1}
+.fstag{font-size:9px;padding:1px 6px;border-radius:8px;border:1px solid;display:inline-block;align-self:flex-start;margin-top:auto}
 .fnote{font-size:11px;color:var(--tx3);margin-bottom:20px}
 .llist{display:flex;flex-direction:column;gap:8px}
 .lrow{border-radius:8px;border:1.5px solid;padding:12px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
@@ -81,15 +83,16 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .lltag{font-size:9px;padding:1px 6px;border-radius:8px;border:1px solid;display:inline-block}
 .lright{flex:1;font-size:13px;color:var(--tx2);line-height:1.6}
 
+/* Org zone box */
 .oz{background:linear-gradient(135deg,#1a1560,#534AB7);border-radius:12px;padding:18px 22px;margin-bottom:24px;display:flex;gap:16px;flex-wrap:wrap}
 .ozl{flex:1;min-width:200px}
 .ozlabel{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.6);margin-bottom:6px}
 .oztext{font-size:13px;color:rgba(255,255,255,.9);line-height:1.7}
 .ozrel{font-size:12px;color:rgba(255,255,255,.8);line-height:1.9}
 
-/* TABS */
+/* Tabs */
 .tabbar{display:flex;border:2px solid var(--pum);border-radius:10px;overflow:hidden;max-width:520px;margin-bottom:24px}
-.tab{flex:1;padding:12px 16px;font-size:13px;font-weight:600;cursor:pointer;text-align:center;border:none;font-family:var(--fn);user-select:none}
+.tab{flex:1;padding:12px 16px;font-size:13px;font-weight:600;cursor:pointer;text-align:center;border:none;font-family:var(--fn);user-select:none;transition:background .15s,color .15s}
 .panel{display:none}
 .panel.active{display:block}
 
@@ -121,12 +124,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .snowtit{font-size:11px;font-weight:600;color:#3C3489;margin-bottom:4px}
 .snowdesc{font-size:11px;color:#3C3489;line-height:1.6}
 
-.ver{border-radius:12px;border:2px solid;margin-bottom:16px;overflow:hidden;background:#fff}
-.verh{padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.vertit{font-size:15px;font-weight:700}
-.verpill{font-size:11px;font-weight:600;padding:3px 12px;border-radius:20px;border:1px solid}
-.verdesc{margin:0 20px 14px;padding:11px 14px;border-radius:8px;font-size:13px;line-height:1.7;border:1px solid}
-.trades{display:flex;gap:10px;flex-wrap:wrap;padding:12px 20px 20px}
+/* Tradeoffs */
+.trades{display:flex;gap:10px;flex-wrap:wrap;padding:12px 0 4px}
 .trade{flex:1;min-width:160px;border-radius:8px;border:1px solid var(--bo);padding:10px 12px;background:var(--bg2)}
 .trlabel{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
 .trtext{font-size:12px;color:var(--tx2);line-height:1.6}
@@ -134,35 +133,24 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .tr .trlabel{color:var(--red)}
 .tp .trlabel{color:#3C3489}
 
-/* Ownership */
-.owns{margin-top:24px}
-.ownlabel{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-bottom:10px}
-.ownblock{border-radius:10px;border:1.5px solid;margin-bottom:10px;overflow:hidden}
-.ownhead{padding:11px 16px;border-bottom:1px solid var(--bo)}
-.ownname{font-size:13px;font-weight:600}
-.ownrole{font-size:11px;opacity:.7;margin-top:2px}
-.ownbody{padding:11px 16px;display:flex;gap:12px;flex-wrap:wrap;background:var(--bg2)}
-.owngrp{flex:1;min-width:140px}
-.owngrplabel{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.6;margin-bottom:5px}
-.chips{display:flex;flex-wrap:wrap;gap:3px}
-.chip{font-size:10px;padding:2px 8px;border-radius:20px;border:1px solid;white-space:nowrap}
-.ca{background:var(--grl);border-color:var(--gr);color:var(--grd)}
-.cm{background:var(--gyl);border-color:var(--gy);color:var(--gyd)}
-.cs2{background:var(--orl);border-color:var(--or);color:#712B13}
-.cd{background:var(--bll);border-color:var(--bl);color:var(--bld)}
-.co{background:var(--aml);border-color:var(--am);color:var(--amd)}
-.cp{background:var(--pul);border-color:var(--pum);color:#3C3489}
-.badge{font-size:9px;padding:1px 5px;border-radius:8px;border:1px solid;margin-left:4px;vertical-align:middle;display:inline-block}
-.ownnote{font-size:11px;line-height:1.6;margin-top:6px;padding:6px 8px;border-radius:6px}
-.growbox{border:1.5px dashed var(--gr);border-radius:8px;padding:8px 10px;background:#E6FBF2;margin-top:6px}
-.growlabel{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--grd);margin-bottom:4px}
-.growtext{font-size:11px;color:var(--grd);line-height:1.6}
-.collab{border:1.5px dashed var(--gr);border-radius:8px;padding:8px 10px;background:#F5FFFA}
-.collabi{display:flex;align-items:flex-start;gap:8px;margin-top:6px}
-.collava{width:28px;height:28px;border-radius:50%;background:var(--grl);border:1.5px solid var(--gr);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--grd);flex-shrink:0}
-.collabn{font-size:12px;font-weight:600;color:var(--grd)}
-.collabd{font-size:11px;color:var(--grd);opacity:.85;line-height:1.5;margin-top:2px}
+/* Ownership blocks */
+.owns{margin-top:28px}
+.ownlabel{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-bottom:12px}
+.ownblock{border-radius:10px;border:1.5px solid;margin-bottom:12px;overflow:hidden}
+.ownhead{padding:12px 18px;border-bottom:1px solid var(--bo)}
+.ownname{font-size:14px;font-weight:700}
+.ownrole{font-size:11px;opacity:.65;margin-top:3px}
 
+.owncols{display:flex;gap:0;flex-wrap:wrap}
+.owncol{flex:1;min-width:220px;padding:14px 18px;border-right:1px solid var(--bo)}
+.owncol:last-child{border-right:none}
+.owncolhead{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--bo)}
+
+.blist{list-style:none;display:flex;flex-direction:column;gap:7px}
+.blist li{font-size:12px;color:var(--tx2);line-height:1.6;padding-left:14px;position:relative}
+.blist li::before{content:"•";position:absolute;left:0;color:var(--tx3);font-size:14px;line-height:1.3}
+
+/* Timeline */
 .tlgrid{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
 .tlcol{flex:1;min-width:260px;border-radius:10px;border:1px solid var(--bo);padding:18px;background:var(--bg)}
 .tlphase{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--bo)}
@@ -170,13 +158,15 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .tlitem:last-child{border-bottom:none;padding-bottom:0}
 .tlarr{color:var(--tx3);flex-shrink:0;font-size:11px;margin-top:3px}
 
+/* Asks */
 .askgrid{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
 .ask{flex:1;min-width:200px;border-radius:10px;border:1px solid var(--bo);padding:16px 18px}
 .asknum{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;opacity:.5}
 .asktit{font-size:13px;font-weight:600;margin-bottom:5px}
 .askdesc{font-size:12px;color:var(--tx2);line-height:1.6}
 
-.ns{background:linear-gradient(135deg,#1a1560,#2d27a0,#534AB7);color:#fff;padding:80px 32px;display:block}
+/* North star */
+.ns{background:linear-gradient(135deg,#1a1560,#2d27a0,#534AB7);color:#fff;padding:80px 32px}
 .ns .sl{color:rgba(255,255,255,.6)}
 .ns .st{color:#fff}
 .nstext{font-size:15px;line-height:1.8;color:rgba(255,255,255,.85);max-width:640px;margin-top:16px}
@@ -244,7 +234,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
       </div>
     </div>
     <div class="relbox">
-      <div class="relh"><div class="relht">Foundational reliability gaps we are also addressing</div><div class="relhd">Known risks that have lacked dedicated product ownership. This structure gives them a home — with engineering partnership required to fully resolve.</div></div>
+      <div class="relh"><div class="relht">Foundational reliability gaps we are also addressing</div><div class="relhd">Known risks that have lacked dedicated product ownership. This structure gives them a home.</div></div>
       <div class="relitems">
         <div class="relitem"><div class="reltit">Pipeline observability</div><div class="reldesc">No consistent monitoring framework distinguishing client-critical from internal pipelines.</div><div class="relown">Product lead: Vijay / Lindsey Cohenno</div></div>
         <div class="relitem"><div class="reltit">Data lineage</div><div class="reldesc">No clear picture of where data came from, how it was transformed, or who touched it.</div><div class="relown">Product lead: Data Governance PM · AES workstream</div></div>
@@ -295,146 +285,169 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 
     <!-- ===== PANEL A ===== -->
     <div class="panel" id="panel-a">
-      <div class="ver" style="border-color:var(--pum)">
-        <div class="verh" style="background:var(--pul)">
-          <div><div class="vertit" style="color:#26215C">Version A — Ray as SME and contributor</div><div style="font-size:12px;color:#3C3489;opacity:.8;margin-top:2px">5 direct reports to Jason · Ray stays in Alicia's org as close SME partner across both roles</div></div>
-          <div class="verpill" style="background:var(--pul);border-color:var(--pum);color:#3C3489">Current baseline</div>
-        </div>
-        <div class="verdesc" style="background:#F5F3FF;border-color:var(--pum);color:#3C3489">Jason owns Data Governance directly with Ray as a close SME partner. A new external hire owns Operational Reporting &amp; AI Reporting with Ray as a close SME partner. Ray stays in Alicia's org — his involvement is structured and named but his time is not exclusively yours.</div>
 
-        <div class="couter">
-          <div class="ci">
-            <!-- Jason -->
-            <div class="card cj" style="min-width:240px"><div class="cn">Jason Keith</div><div class="cr2">Executive Director, Product Management · Data &amp; Analytics Platform</div><div class="cb" style="background:var(--pul);border-color:var(--pum);color:#3C3489">5 direct reports</div></div>
-            <div class="v"></div>
-            <div class="h" style="width:960px;max-width:100%"></div>
-            <div class="br" style="width:960px;max-width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
-
-            <div class="directs" style="max-width:960px">
-
-              <!-- Suhas -->
-              <div class="dcol">
-                <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View<br>Snowflake POC &amp; evaluation lead</div><div class="cb" style="background:var(--pul);border-color:var(--pum);color:#3C3489">Reports to Jason</div></div>
+      <!-- Org chart A -->
+      <div class="couter">
+        <div class="ci">
+          <div class="card cj" style="min-width:240px"><div class="cn">Jason Keith</div><div class="cr2">Executive Director, Product Management · Data &amp; Analytics Platform</div></div>
+          <div class="v"></div>
+          <div class="h" style="width:960px;max-width:100%"></div>
+          <div class="br" style="width:960px;max-width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
+          <div class="directs" style="max-width:960px">
+            <div class="dcol">
+              <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View<br>Snowflake POC &amp; evaluation lead</div></div>
+            </div>
+            <div class="dcol">
+              <div class="card ch" style="width:100%"><div class="cn">New Hire #2</div><div class="cr2">Data Governance PM<br>AES platform · modeling standards · pipeline governance</div></div>
+              <div class="v"></div>
+              <div class="cfuture card" style="width:100%"><div class="cn" style="color:var(--tx3)">Data Governance team</div><div class="cr2">Builds beneath this role over time</div></div>
+            </div>
+            <div class="dcol">
+              <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Behavioral Analytics, Sigma &amp; Operational Reporting</div></div>
+              <div class="v"></div>
+              <div class="card ch" style="width:100%"><div class="cn">New Hire #1</div><div class="cr2">Behavioral Analytics PM</div></div>
+            </div>
+            <div class="dcol">
+              <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Services &amp; Ingestion</div></div>
+              <div class="v"></div><div class="h" style="width:100%"></div>
+              <div class="br" style="width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
+              <div class="subcards">
+                <div class="sc"><div class="scn">Lindsey Cohenno</div><div class="scr">Data Lake</div></div>
+                <div class="sc"><div class="scn">Corey Connally</div><div class="scr">Pipelines</div></div>
+                <div class="sc"><div class="scn">Raghuram L</div><div class="scr">Imports</div></div>
+                <div class="sc"><div class="scn">John Bauer</div><div class="scr">Migrations</div></div>
+                <div class="sc"><div class="scn">Sagar Joshi</div><div class="scr">Life Sci RWD</div></div>
               </div>
-
-              <!-- Data Governance — Jason interim -->
-              <div class="dcol">
-                <div class="card cjason" style="width:100%"><div class="cn">Data Governance PM</div><div class="cr2">AES platform · data modeling standards · pipeline governance</div><div class="cb" style="background:var(--pul);border-color:var(--pum);color:#3C3489">Jason interim</div></div>
-                <div class="v"></div>
-                <!-- Ray SME -->
-                <div style="width:100%;border:1.5px dashed var(--gr);border-radius:7px;padding:6px 8px;background:#F5FFFA;text-align:center">
-                  <div style="font-size:10px;font-weight:600;color:var(--grd)">Ray Cook — close SME partner</div>
-                  <div style="font-size:9px;color:var(--grd);opacity:.75;margin-top:1px">Alicia's org · AES domain expertise &amp; data governance perspective</div>
-                </div>
-                <div class="v"></div>
-                <!-- AES team future -->
-                <div class="cfuture card" style="width:100%"><div class="cn" style="color:var(--tx3)">AES team</div><div class="cr2">Builds beneath this role over time</div></div>
-              </div>
-
-              <!-- Operational Reporting — new hire -->
-              <div class="dcol">
-                <div class="card ch" style="width:100%"><div class="cn">Open hire</div><div class="cr2">Operational Reporting &amp; AI Reporting PM<br>Legacy migration → Generative BI vision</div><div class="cb" style="background:var(--aml);border-color:var(--am);color:var(--amd)">New hire · Reports to Jason</div></div>
-                <div class="v"></div>
-                <!-- Ray SME -->
-                <div style="width:100%;border:1.5px dashed var(--gr);border-radius:7px;padding:6px 8px;background:#F5FFFA;text-align:center">
-                  <div style="font-size:10px;font-weight:600;color:var(--grd)">Ray Cook — close SME partner</div>
-                  <div style="font-size:9px;color:var(--grd);opacity:.75;margin-top:1px">Alicia's org · AI reporting perspective &amp; product direction input</div>
-                </div>
-                <div class="v"></div>
-                <!-- Reporting team future -->
-                <div class="cfuture card" style="width:100%"><div class="cn" style="color:var(--tx3)">AI Reporting team</div><div class="cr2">Builds beneath this role over time</div></div>
-              </div>
-
-              <!-- Bridget -->
-              <div class="dcol">
-                <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Behavioral Analytics &amp; Sigma<br>Personally owns Sigma eng, RBAC, legacy sunset</div></div>
-                <div class="v"></div>
-                <div class="card ch" style="width:100%"><div class="cn">Open hire</div><div class="cr2">Behavioral Analytics PM</div><div class="cb" style="background:var(--aml);border-color:var(--am);color:var(--amd)">Hire #1</div></div>
-              </div>
-
-              <!-- Vijay -->
-              <div class="dcol">
-                <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Services &amp; Ingestion</div></div>
-                <div class="v"></div><div class="h" style="width:100%"></div>
-                <div class="br" style="width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
-                <div class="subcards">
-                  <div class="sc"><div class="scn">Lindsey Cohenno</div><div class="scr">Data Lake</div></div>
-                  <div class="sc"><div class="scn">Corey Connally</div><div class="scr">Pipelines</div></div>
-                  <div class="sc"><div class="scn">Raghuram L</div><div class="scr">Imports</div></div>
-                  <div class="sc"><div class="scn">John Bauer</div><div class="scr">Migrations</div></div>
-                  <div class="sc"><div class="scn">Sagar Joshi</div><div class="scr">Life Sci RWD</div></div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-
-        <!-- Snowflake callout -->
-        <div class="snowbox">
-          <div class="snowtit">Snowflake ownership — collective model (both versions)</div>
-          <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction, feature adoption decisions, and org-wide governance standards.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features and tools, validates them, and determines how to roll them out across the broader organization.</div>
-        </div>
-
-        <div class="trades" style="margin-top:12px">
-          <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Lower friction. Alicia retains Ray. No headcount implications. Ray's involvement is structured, named, and visible in both roles.</div></div>
-          <div class="trade tr"><div class="trlabel">The risk</div><div class="trtext">Ray's time is not exclusively yours. Jason carries both interim roles — Data Governance PM and overall platform strategy. Execution depends on goodwill and scheduling.</div></div>
-        </div>
       </div>
 
-      <!-- Version A ownership bars -->
+      <div class="snowbox">
+        <div class="snowtit">Snowflake ownership — collective model (both versions)</div>
+        <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction, feature adoption decisions, and org-wide governance standards.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features and tools, validates them, and determines how to roll them out across the broader organization.</div>
+      </div>
+
+      <div style="margin:14px 0 4px;padding:12px 16px;border-radius:8px;border:1.5px dashed var(--gr);background:var(--grl)">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--grd);margin-bottom:5px">Ray Cook — embedded SME (Version A)</div>
+        <div style="font-size:12px;color:var(--grd);line-height:1.7">Ray remains in Alicia's org but serves as a named, structured SME across two workstreams: <strong>Bridget's operational reporting migration</strong> — actively partnering on tool selection, legacy sunset, and the Generative BI transition — and <strong>the Data Governance buildout</strong> — shaping the AES platform standards and governance framework alongside New Hire #2. Ray's involvement is defined, not ad hoc.</div>
+      </div>
+
+      <div class="trades">
+        <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Budget neutral. Alicia retains Ray. A dedicated Data Governance specialist can go deeper on platform governance than a generalist PM could. Ray's expertise is accessible across both critical workstreams without a political org move.</div></div>
+        <div class="trade tr"><div class="trlabel">The risk</div><div class="trtext">Ray's time is shared — his involvement depends on Alicia's continued goodwill and scheduling. Bridget carries a wide mandate in year one. The Data Governance hire needs to ramp quickly.</div></div>
+      </div>
+
+      <!-- Ownership A -->
       <div class="owns">
         <div class="ownlabel">Product ownership — Version A</div>
 
         <div class="ownblock" style="border-color:var(--gr)">
-          <div class="ownhead" style="background:#F0FDF7"><div class="ownname" style="color:var(--grd)">Suhas Vasu — Data View &amp; Snowflake POC Lead <span class="badge" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Reports to Jason</span></div><div class="ownrole" style="color:var(--grd)">Owns Data View as a commercial product · Leads engineering team evaluating Snowflake features for org-wide rollout · Solves problem 2</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Data View</div><div class="chips"><span class="chip ca">Data View</span><span class="chip ca">Transformation Framework</span><span class="chip cm">Data Warehouse Feed</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Snowflake — Suhas's role</div><div class="chips"><span class="chip co">Feature POC &amp; evaluation</span><span class="chip co">Engineering team lead on Snowflake tests</span><span class="chip co">Rollout recommendations to Jason/Raghu/Amol</span><span class="chip co">Cortex validation</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Reliability</div><div class="chips"><span class="chip co">Data lineage strategy</span><span class="chip co">DR product requirements</span></div></div>
-            <div class="owngrp"><div class="growbox"><div class="growlabel">Year 2 growth path</div><div class="growtext">As Data View grows commercially and Snowflake strategy matures, Suhas is the natural owner of the Data Lake team — one leader across the full data platform commercial layer.</div></div></div>
+          <div class="ownhead" style="background:#F0FDF7">
+            <div class="ownname" style="color:var(--grd)">Data View &amp; Snowflake Platform</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Suhas Vasu</div>
           </div>
-        </div>
-
-        <div class="ownblock" style="border-color:var(--pum);border-style:dashed">
-          <div class="ownhead" style="background:#FAFAFE"><div class="ownname" style="color:#26215C">Jason Keith — Data Governance PM (interim) <span class="badge" style="background:var(--pul);border-color:var(--pum);color:#3C3489">Interim · Version A only</span></div><div class="ownrole" style="color:var(--pu)">AES platform · data modeling standards · pipeline governance · Solves problem 3</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--pu)">AES platform</div><div class="chips"><span class="chip ca">DAG Factory / Airflow</span><span class="chip ca">Astronomer</span><span class="chip co">Self-serve model builder</span><span class="chip co">Pipeline governance standard</span><span class="chip cs2">IICS — sunset</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--pu)">Governance mandate</div><div class="chips"><span class="chip cp">Data modeling standards</span><span class="chip cp">Gold-standard pipeline framework</span><span class="chip cp">Analytics org relationship reset</span></div></div>
-            <div class="owngrp">
-              <div class="collab"><div class="owngrplabel" style="color:var(--grd)">Close SME partner</div><div class="collabi"><div class="collava">RC</div><div><div class="collabn">Ray Cook <span style="font-size:10px;font-weight:400;opacity:.7">· Alicia's org</span></div><div class="collabd">Ray's team runs Airflow workflows today and is the primary real-world test case. His domain expertise shapes what the self-serve governance platform needs to deliver.</div></div></div></div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Now</div>
+              <ul class="blist">
+                <li>Owns Data View as a commercial product — documentation, tooling, and usage visibility</li>
+                <li>Leads the engineering team running Snowflake POCs and feature evaluations</li>
+                <li>Feeds rollout recommendations to Jason, Raghu, and Amol</li>
+                <li>Drives Cortex validation, data lineage strategy, and DR product requirements</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Future</div>
+              <ul class="blist">
+                <li>Takes full Snowflake strategic ownership as the collective model matures</li>
+                <li>Absorbs the Data Lake team — one leader across the full data platform commercial layer</li>
+                <li>Becomes the definitive owner of how athenahealth's data platform is monetized and governed</li>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="ownblock" style="border-color:var(--am)">
-          <div class="ownhead" style="background:var(--aml)"><div class="ownname" style="color:var(--amd)">Open hire — Operational Reporting &amp; AI Reporting PM <span class="badge" style="background:var(--aml);border-color:var(--am);color:var(--amd)">New hire · Reports to Jason</span></div><div class="ownrole" style="color:var(--amd)">Legacy reporting migration · Generative BI vision · AI-native client reporting · Solves problem 4</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--amd)">Owns now</div><div class="chips"><span class="chip ca">Operational Reporting Platform</span><span class="chip cd">Insights Dashboards</span><span class="chip cd">Reporting &amp; Analytics Hub</span><span class="chip cm">Report Library</span><span class="chip cm">Report Builder</span><span class="chip cm">Report Inbox</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--amd)">Migration path</div><div class="chips"><span class="chip cs2">Legacy platform sunset roadmap</span><span class="chip co">Generative BI tool evaluation &amp; selection</span><span class="chip co">Client migration strategy</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--amd)">Long-term destination</div><div class="chips"><span class="chip co">Generative BI — clients self-serve reports &amp; metrics</span><span class="chip co">AI-native reporting interface</span><span class="chip co">Custom analytics for any practice size</span></div><div class="ownnote" style="background:var(--pul);border-left:3px solid var(--pum);color:#3C3489;margin-top:6px">This role owns both the platform as it exists today and the vision for where it goes. The destination is a Generative BI tool that makes custom analytics accessible to every practice.</div></div>
-            <div class="owngrp">
-              <div class="collab"><div class="owngrplabel" style="color:var(--grd)">Close SME partner</div><div class="collabi"><div class="collava">RC</div><div><div class="collabn">Ray Cook <span style="font-size:10px;font-weight:400;opacity:.7">· Alicia's org</span></div><div class="collabd">Ray's AI reporting perspective and analytics expertise shapes the product direction for the Generative BI vision — what to build, what to avoid, and how clients will actually use it.</div></div></div></div>
+          <div class="ownhead" style="background:var(--aml)">
+            <div class="ownname" style="color:var(--amd)">ETL &amp; Data Governance Platform</div>
+            <div class="ownrole" style="color:var(--amd)">Owner: New Hire #2 (Data Governance Specialist) · Ray Cook embedded SME</div>
+          </div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--amd)">Now</div>
+              <ul class="blist">
+                <li>Owns AES platform — Airflow, Astronomer, and the DAG factory</li>
+                <li>Sets the gold standard for how data teams model and push to Snowflake</li>
+                <li>Builds pipeline governance guardrails and a self-serve model builder</li>
+                <li>Resets the relationship with the analytics org — shared standards, less friction</li>
+                <li>Drives IICS sunset with Ray as active partner on standards and framework design</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--amd)">Future</div>
+              <ul class="blist">
+                <li>Platform matures from active builder to governance steward — standards enforced, not negotiated</li>
+                <li>Any data team member builds and deploys gold-standard models without engineering bottlenecks</li>
+                <li>Data lineage, quality scoring, and observability become fully automated</li>
+                <li>A dedicated Data Governance team builds beneath this role as adoption scales across the org</li>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="ownblock" style="border-color:var(--bl)">
-          <div class="ownhead" style="background:var(--bll)"><div class="ownname" style="color:var(--bld)">Bridget Burdick — Behavioral Analytics &amp; Sigma <span class="badge" style="background:var(--bll);border-color:var(--bl);color:var(--bld)">Direct report to Jason · 1 direct report</span></div><div class="ownrole" style="color:var(--bld)">Sigma engineering &amp; RBAC · Legacy reporting sunset · Manages Behavioral Analytics PM · Solves problem 1</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--bld)">Bridget leads directly</div><div class="chips"><span class="chip ca">Sigma engineering features</span><span class="chip ca">RBAC</span><span class="chip ca">PHI MOD Reporting</span><span class="chip cm">Reporting Service Platform</span><span class="chip cm">Data Lens</span><span class="chip cm">In-house Reporting Platform</span><span class="chip cs2">Data Viz Platform</span><span class="chip cs2">Practice / Clinician Reviews</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--bld)">Behavioral Analytics PM (hire #1)</div><div class="chips"><span class="chip co">Amplitude — rebuild &amp; scale</span><span class="chip ca">Metatron</span><span class="chip ca">Behavioral Data Framework</span><span class="chip cm">Bayes / AegisX</span><span class="chip co">"Time" metric — single source of truth</span><span class="chip co">Internal self-serve analytics</span></div></div>
+          <div class="ownhead" style="background:var(--bll)">
+            <div class="ownname" style="color:var(--bld)">Behavioral Analytics, Sigma Engineering &amp; Operational Reporting</div>
+            <div class="ownrole" style="color:var(--bld)">Owner: Bridget Burdick · Manages: Behavioral Analytics PM (New Hire #1) · Ray Cook embedded SME on Operational Reporting</div>
+          </div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--bld)">Now</div>
+              <ul class="blist">
+                <li>Personally owns Sigma engineering, RBAC, PHI MOD Reporting, and the legacy sunset portfolio</li>
+                <li>Manages the Behavioral Analytics PM who rebuilds Amplitude and instruments key clinical and financial workflows</li>
+                <li>Establishes "time" as a single trusted metric every PM works from</li>
+                <li>Owns operational reporting platform and leads the legacy migration to a Generative BI tool, with Ray as a deeply embedded partner on tool selection and transition strategy</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--bld)">Future</div>
+              <ul class="blist">
+                <li>Generative BI tool in production — operational reporting mandate evolves or consolidates once migration is complete</li>
+                <li>Client-facing behavioral analytics — practices see how their staff uses athenahealth, where time is lost, how clinician behavior shifts after new workflows</li>
+                <li>Provider wellbeing and burnout analytics — a differentiated product built on the "time" metric that no EHR competitor does well</li>
+                <li>Network intelligence — athenahealth's 180K-physician network becomes a benchmarking lens by specialty, region, and practice size</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="ownblock" style="border-color:var(--gr)">
-          <div class="ownhead" style="background:#F0FDF7"><div class="ownname" style="color:var(--grd)">Vijay Rajagopal — Data Ingestion &amp; Movement <span class="badge" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Direct report to Jason · 4 direct reports</span></div><div class="ownrole" style="color:var(--grd)">Data foundation reliability · Ingestion SLAs · Pipeline observability · Solves problem 5</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Lindsey Cohenno — Data Lake</div><div class="chips"><span class="chip ca">Data Lake</span><span class="chip ca">aNet Ingestion</span><span class="chip ca">Microservice Data Ingestion</span><span class="chip co">Pipeline observability</span><span class="chip co">DR SLAs</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Corey Connally — Pipelines</div><div class="chips"><span class="chip ca">Data Pipelines</span><span class="chip ca">VBC Data Pipelines</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Raghuram L — Imports</div><div class="chips"><span class="chip ca">Data Imports</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">John Bauer — Migrations</div><div class="chips"><span class="chip ca">Migrations &amp; Config Management</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Sagar Joshi — Life Sciences RWD</div><div class="chips"><span class="chip ca">Real World Data Platform</span></div></div>
+          <div class="ownhead" style="background:#F0FDF7">
+            <div class="ownname" style="color:var(--grd)">Data Ingestion, Movement &amp; Reliability</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Vijay Rajagopal · 5 direct reports</div>
+          </div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Now</div>
+              <ul class="blist">
+                <li>Owns the trust and reliability layer that every other team depends on — Data Lake, all ingestion pipelines, Imports, Migrations, and Config Management</li>
+                <li>Manages VBC Data Pipelines and Life Sciences Real World Data platform</li>
+                <li>Builds and enforces the tiered pipeline observability framework — client-critical pipelines are monitored and triaged before clients ever notice a problem</li>
+                <li>Sets and enforces DR SLAs across the full data ingestion layer</li>
+                <li>Establishes athenahealth as a data company clients and internal teams can trust implicitly</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Future</div>
+              <ul class="blist">
+                <li>Real-time data as a product tier — the data lake moves from nightly batch to continuous refresh, unlocking a new class of time-sensitive analytics products that batch processing cannot support</li>
+                <li>Life Sciences RWD grows from an internal platform into a commercially significant standalone product as the real-world evidence market expands — Vijay owns this as a growth business, not just infrastructure</li>
+                <li>The data reliability brand becomes a genuine competitive differentiator — pipeline observability, data quality standards, and SLA enforcement position athenahealth's data network as the most trusted in ambulatory health IT</li>
+                <li>As the ingestion foundation matures and stabilizes, Data Lake scope transitions to Suhas and Vijay's zone evolves toward higher-order data services and real-time infrastructure</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -442,115 +455,187 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 
     <!-- ===== PANEL B ===== -->
     <div class="panel" id="panel-b">
-      <div class="ver" style="border-color:var(--gr)">
-        <div class="verh" style="background:var(--grl)">
-          <div><div class="vertit" style="color:var(--grd)">Version B — Ray on the team ★ Recommended</div><div style="font-size:12px;color:var(--grd);opacity:.8;margin-top:2px">5 direct reports to Jason · Ray owns both Data Governance and Operational Reporting as a senior IC with two mandates</div></div>
-          <div class="verpill" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Recommended</div>
-        </div>
-        <div class="verdesc" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Ray moves onto your team as a senior IC with two mandates: Data Governance PM (AES platform, modeling standards, pipeline governance) and Operational Reporting &amp; AI Reporting PM (legacy migration to Generative BI). Both reporting lines disappear as placeholders — Ray owns them immediately. Teams build beneath both areas over time.</div>
 
-        <div class="couter">
-          <div class="ci">
-            <div class="card cj" style="min-width:240px"><div class="cn">Jason Keith</div><div class="cr2">Executive Director, Product Management · Data &amp; Analytics Platform</div><div class="cb" style="background:var(--pul);border-color:var(--pum);color:#3C3489">5 direct reports</div></div>
-            <div class="v"></div>
-            <div class="h" style="width:960px;max-width:100%"></div>
-            <div class="br" style="width:960px;max-width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
-
-            <div class="directs" style="max-width:960px">
-
-              <!-- Suhas -->
-              <div class="dcol">
-                <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View<br>Snowflake POC &amp; evaluation lead</div><div class="cb" style="background:var(--pul);border-color:var(--pum);color:#3C3489">Reports to Jason</div></div>
+      <!-- Org chart B -->
+      <div class="couter">
+        <div class="ci">
+          <div class="card cj" style="min-width:240px"><div class="cn">Jason Keith</div><div class="cr2">Executive Director, Product Management · Data &amp; Analytics Platform</div></div>
+          <div class="v"></div>
+          <div class="h" style="width:960px;max-width:100%"></div>
+          <div class="br" style="width:960px;max-width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
+          <div class="directs" style="max-width:960px">
+            <div class="dcol">
+              <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View<br>Snowflake POC &amp; evaluation lead</div></div>
+            </div>
+            <div class="dcol">
+              <div class="card cray" style="width:100%"><div class="cn">Ray Cook</div><div class="cr2">Sr. IC · Data Governance PM &amp; Operational Reporting &amp; AI Reporting PM</div><div class="cb" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Two mandates · No direct reports initially</div></div>
+              <div class="v"></div>
+              <div class="h" style="width:100%"></div>
+              <div class="br" style="width:100%"><div class="v"></div><div class="v"></div></div>
+              <div style="display:flex;gap:5px;width:100%">
+                <div class="cfuture card" style="flex:1"><div class="cn" style="color:var(--tx3)">Data Governance team</div><div class="cr2">Builds over time</div></div>
+                <div class="cfuture card" style="flex:1"><div class="cn" style="color:var(--tx3)">AI Reporting team</div><div class="cr2">Builds over time</div></div>
               </div>
-
-              <!-- Ray — two mandates -->
-              <div class="dcol">
-                <div class="card cray" style="width:100%"><div class="cn">Ray Cook</div><div class="cr2">Sr. IC · Data Governance PM<br>&amp; Operational Reporting &amp; AI Reporting PM</div><div class="cb" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Two mandates · No direct reports initially</div></div>
-                <div class="v"></div>
-                <div class="h" style="width:100%"></div>
-                <div class="br" style="width:100%"><div class="v"></div><div class="v"></div></div>
-                <div style="display:flex;gap:5px;width:100%">
-                  <div class="cfuture card" style="flex:1"><div class="cn" style="color:var(--tx3)">Data Governance team</div><div class="cr2">Builds over time</div></div>
-                  <div class="cfuture card" style="flex:1"><div class="cn" style="color:var(--tx3)">AI Reporting team</div><div class="cr2">Builds over time</div></div>
-                </div>
+            </div>
+            <div class="dcol">
+              <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Behavioral Analytics &amp; Sigma</div></div>
+              <div class="v"></div>
+              <div class="card ch" style="width:100%"><div class="cn">New Hire #1</div><div class="cr2">Behavioral Analytics PM</div></div>
+            </div>
+            <div class="dcol">
+              <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Services &amp; Ingestion</div></div>
+              <div class="v"></div><div class="h" style="width:100%"></div>
+              <div class="br" style="width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
+              <div class="subcards">
+                <div class="sc"><div class="scn">Lindsey Cohenno</div><div class="scr">Data Lake</div></div>
+                <div class="sc"><div class="scn">Corey Connally</div><div class="scr">Pipelines</div></div>
+                <div class="sc"><div class="scn">Raghuram L</div><div class="scr">Imports</div></div>
+                <div class="sc"><div class="scn">John Bauer</div><div class="scr">Migrations</div></div>
+                <div class="sc"><div class="scn">Sagar Joshi</div><div class="scr">Life Sci RWD</div></div>
               </div>
-
-              <!-- Bridget -->
-              <div class="dcol">
-                <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Behavioral Analytics &amp; Sigma<br>Personally owns Sigma eng, RBAC, legacy sunset</div></div>
-                <div class="v"></div>
-                <div class="card ch" style="width:100%"><div class="cn">Open hire</div><div class="cr2">Behavioral Analytics PM</div><div class="cb" style="background:var(--aml);border-color:var(--am);color:var(--amd)">Hire #1</div></div>
-              </div>
-
-              <!-- Vijay -->
-              <div class="dcol">
-                <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Services &amp; Ingestion</div></div>
-                <div class="v"></div><div class="h" style="width:100%"></div>
-                <div class="br" style="width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
-                <div class="subcards">
-                  <div class="sc"><div class="scn">Lindsey Cohenno</div><div class="scr">Data Lake</div></div>
-                  <div class="sc"><div class="scn">Corey Connally</div><div class="scr">Pipelines</div></div>
-                  <div class="sc"><div class="scn">Raghuram L</div><div class="scr">Imports</div></div>
-                  <div class="sc"><div class="scn">John Bauer</div><div class="scr">Migrations</div></div>
-                  <div class="sc"><div class="scn">Sagar Joshi</div><div class="scr">Life Sci RWD</div></div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-
-        <div class="snowbox">
-          <div class="snowtit">Snowflake ownership — collective model (both versions)</div>
-          <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction, feature adoption decisions, and org-wide governance standards.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features and tools, validates them, and determines how to roll them out across the broader organization.</div>
-        </div>
-
-        <div class="trades" style="margin-top:12px">
-          <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Strongest org from day one. Both roles have a real owner immediately. Ray's domain expertise and relationships accelerate execution on the two hardest problems. Teams grow beneath him over time — same pattern as Vijay and Bridget.</div></div>
-          <div class="trade tr"><div class="trlabel">The friction</div><div class="trtext">Ray moves from Alicia's org — requires leadership alignment. Alicia loses a strong contributor. This conversation needs to happen before anything is announced.</div></div>
-          <div class="trade tp"><div class="trlabel">The recommendation</div><div class="trtext">Version B is the right structure strategically. Version A is the fallback if Ray's move isn't possible. Present both — let Sam help determine what's feasible.</div></div>
-        </div>
       </div>
 
-      <!-- Version B ownership bars -->
+      <div class="snowbox">
+        <div class="snowtit">Snowflake ownership — collective model (both versions)</div>
+        <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction, feature adoption decisions, and org-wide governance standards.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features and tools, validates them, and determines how to roll them out across the broader organization.</div>
+      </div>
+
+      <div class="trades">
+        <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Strongest org from day one. Both roles have a real owner immediately. Ray's domain expertise and relationships accelerate execution on the two hardest problems.</div></div>
+        <div class="trade tr"><div class="trlabel">The friction</div><div class="trtext">Ray moves from Alicia's org — requires leadership alignment. This conversation needs to happen before anything is announced.</div></div>
+        <div class="trade tp"><div class="trlabel">The recommendation</div><div class="trtext">Version B is the right structure strategically. Version A is the fallback if Ray's move isn't possible. Present both — let Sam help determine what's feasible.</div></div>
+      </div>
+
+      <!-- Ownership B -->
       <div class="owns">
         <div class="ownlabel">Product ownership — Version B</div>
 
         <div class="ownblock" style="border-color:var(--gr)">
-          <div class="ownhead" style="background:#F0FDF7"><div class="ownname" style="color:var(--grd)">Suhas Vasu — Data View &amp; Snowflake POC Lead <span class="badge" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Reports to Jason</span></div><div class="ownrole" style="color:var(--grd)">Owns Data View as a commercial product · Leads engineering team evaluating Snowflake features for org-wide rollout · Solves problem 2</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Data View</div><div class="chips"><span class="chip ca">Data View</span><span class="chip ca">Transformation Framework</span><span class="chip cm">Data Warehouse Feed</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Snowflake — Suhas's role</div><div class="chips"><span class="chip co">Feature POC &amp; evaluation</span><span class="chip co">Engineering team lead on Snowflake tests</span><span class="chip co">Rollout recommendations to Jason/Raghu/Amol</span><span class="chip co">Cortex validation</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Reliability</div><div class="chips"><span class="chip co">Data lineage strategy</span><span class="chip co">DR product requirements</span></div></div>
-            <div class="owngrp"><div class="growbox"><div class="growlabel">Year 2 growth path</div><div class="growtext">As Data View grows commercially and Snowflake strategy matures, Suhas is the natural owner of the Data Lake team — one leader across the full data platform commercial layer.</div></div></div>
+          <div class="ownhead" style="background:#F0FDF7">
+            <div class="ownname" style="color:var(--grd)">Data View &amp; Snowflake Platform</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Suhas Vasu</div>
+          </div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Now</div>
+              <ul class="blist">
+                <li>Owns Data View as a commercial product — documentation, tooling, and usage visibility</li>
+                <li>Leads the engineering team running Snowflake POCs and feature evaluations</li>
+                <li>Feeds rollout recommendations to Jason, Raghu, and Amol</li>
+                <li>Drives Cortex validation, data lineage strategy, and DR product requirements</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Future</div>
+              <ul class="blist">
+                <li>Takes full Snowflake strategic ownership as the collective model matures</li>
+                <li>Absorbs the Data Lake team — one leader across the full data platform commercial layer</li>
+                <li>Becomes the definitive owner of how athenahealth's data platform is monetized and governed</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="ownblock" style="border-color:var(--gr)">
-          <div class="ownhead" style="background:var(--grl)"><div class="ownname" style="color:var(--grd)">Ray Cook — Data Governance PM &amp; Operational Reporting &amp; AI Reporting PM <span class="badge" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Reports to Jason · Senior IC · Two mandates</span></div><div class="ownrole" style="color:var(--grd)">AES platform &amp; data governance · Legacy reporting migration → Generative BI vision · Teams build beneath both areas over time · Solves problems 3 &amp; 4</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Mandate 1 — Data Governance</div><div class="chips"><span class="chip ca">DAG Factory / Airflow</span><span class="chip ca">Astronomer</span><span class="chip co">Self-serve model builder</span><span class="chip co">Pipeline governance standard</span><span class="chip co">Data modeling standards</span><span class="chip cs2">IICS — sunset</span></div><div class="ownnote" style="background:var(--grl);border-left:3px solid var(--gr);color:var(--grd);margin-top:6px">Ray's team already runs Airflow workflows — he is the primary real-world test case and shapes what the self-serve governance platform must deliver from day one.</div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Mandate 2 — Operational Reporting &amp; AI Reporting</div><div class="chips"><span class="chip ca">Operational Reporting Platform</span><span class="chip cd">Insights Dashboards</span><span class="chip cd">Reporting &amp; Analytics Hub</span><span class="chip cm">Report Library</span><span class="chip cm">Report Builder</span><span class="chip cm">Report Inbox</span><span class="chip cs2">Legacy sunset roadmap</span><span class="chip co">Generative BI evaluation &amp; selection</span><span class="chip co">AI-native reporting vision</span></div><div class="ownnote" style="background:var(--pul);border-left:3px solid var(--pum);color:#3C3489;margin-top:6px">The destination is a Generative BI tool where clients spin up their own reports and metrics on demand — accessible to any practice regardless of size or technical sophistication.</div></div>
-            <div class="owngrp"><div class="growbox"><div class="growlabel">How this scales over time</div><div class="growtext">Ray starts as a solo IC owning both areas. As the organization matures and headcount opens up, a Data Governance team builds beneath mandate 1 and an AI Reporting team builds beneath mandate 2 — the same pattern as Vijay and Bridget. Ray grows into a multi-team leader.</div></div></div>
+          <div class="ownhead" style="background:var(--grl)">
+            <div class="ownname" style="color:var(--grd)">ETL &amp; Data Governance Platform + Operational Reporting &amp; AI Reporting</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Ray Cook · Senior IC · Two mandates</div>
+          </div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Now — Data Governance</div>
+              <ul class="blist">
+                <li>Owns AES platform — Airflow, Astronomer, and the DAG factory</li>
+                <li>Sets the standard for how data teams model and push to Snowflake</li>
+                <li>Builds pipeline governance guardrails and a self-serve model builder</li>
+                <li>Ray's team already runs Airflow workflows — he is the primary real-world test case from day one</li>
+                <li>Drives IICS sunset</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Now — Operational Reporting &amp; AI Reporting</div>
+              <ul class="blist">
+                <li>Owns the full operational reporting platform — Insights Dashboards, Report Library, Report Builder, Report Inbox</li>
+                <li>Drives the migration strategy from legacy reporting tools to a Generative BI solution</li>
+                <li>Evaluates and selects the Generative BI tool and defines the client migration path</li>
+                <li>Manages the legacy sunset roadmap and stakeholder alignment</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Future — Data Governance</div>
+              <ul class="blist">
+                <li>Platform matures from active builder to governance steward — standards enforced, not negotiated</li>
+                <li>Any data team member builds and deploys gold-standard models without engineering bottlenecks</li>
+                <li>A dedicated Data Governance team builds beneath this mandate as adoption scales</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Future — AI Reporting</div>
+              <ul class="blist">
+                <li>Legacy reporting is largely sunset — engineering focused forward, not backward</li>
+                <li>Generative BI is the primary client analytics interface for any practice, any size</li>
+                <li>Ray evolves into a full AI reporting product leader — natural language queries, proactive insights, self-serve visualization</li>
+                <li>Ray grows into a multi-team leader across both mandates — the same scaling pattern as Vijay and Bridget</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="ownblock" style="border-color:var(--bl)">
-          <div class="ownhead" style="background:var(--bll)"><div class="ownname" style="color:var(--bld)">Bridget Burdick — Behavioral Analytics &amp; Sigma <span class="badge" style="background:var(--bll);border-color:var(--bl);color:var(--bld)">Direct report to Jason · 1 direct report</span></div><div class="ownrole" style="color:var(--bld)">Sigma engineering &amp; RBAC · Legacy reporting sunset · Manages Behavioral Analytics PM · Solves problem 1</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--bld)">Bridget leads directly</div><div class="chips"><span class="chip ca">Sigma engineering features</span><span class="chip ca">RBAC</span><span class="chip ca">PHI MOD Reporting</span><span class="chip cm">Reporting Service Platform</span><span class="chip cm">Data Lens</span><span class="chip cm">In-house Reporting Platform</span><span class="chip cs2">Data Viz Platform</span><span class="chip cs2">Practice / Clinician Reviews</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--bld)">Behavioral Analytics PM (hire #1)</div><div class="chips"><span class="chip co">Amplitude — rebuild &amp; scale</span><span class="chip ca">Metatron</span><span class="chip ca">Behavioral Data Framework</span><span class="chip cm">Bayes / AegisX</span><span class="chip co">"Time" metric — single source of truth</span><span class="chip co">Internal self-serve analytics</span></div></div>
+          <div class="ownhead" style="background:var(--bll)">
+            <div class="ownname" style="color:var(--bld)">Behavioral Analytics &amp; Sigma Engineering</div>
+            <div class="ownrole" style="color:var(--bld)">Owner: Bridget Burdick · Manages: Behavioral Analytics PM (New Hire #1)</div>
+          </div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--bld)">Now</div>
+              <ul class="blist">
+                <li>Personally owns Sigma engineering, RBAC, PHI MOD Reporting, and the legacy sunset portfolio</li>
+                <li>Manages the Behavioral Analytics PM who rebuilds Amplitude and instruments key clinical and financial workflows</li>
+                <li>Establishes "time" as a single trusted metric every PM works from</li>
+                <li>Builds the internal self-serve behavioral intelligence platform</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--bld)">Future</div>
+              <ul class="blist">
+                <li>Client-facing behavioral analytics — practices see how their staff uses athenahealth, where time is lost, and how clinician behavior shifts after new workflows</li>
+                <li>Provider wellbeing and burnout analytics — a differentiated product built on the "time" metric that no EHR competitor does well</li>
+                <li>Network intelligence — athenahealth's 180K-physician network becomes a benchmarking lens by specialty, region, and practice size</li>
+                <li>Sigma engineering evolves as Alicia's team drives more content strategy, shifting Bridget's focus toward behavioral platform governance and commercial expansion</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="ownblock" style="border-color:var(--gr)">
-          <div class="ownhead" style="background:#F0FDF7"><div class="ownname" style="color:var(--grd)">Vijay Rajagopal — Data Ingestion &amp; Movement <span class="badge" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Direct report to Jason · 4 direct reports</span></div><div class="ownrole" style="color:var(--grd)">Data foundation reliability · Ingestion SLAs · Pipeline observability · Solves problem 5</div></div>
-          <div class="ownbody">
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Lindsey Cohenno — Data Lake</div><div class="chips"><span class="chip ca">Data Lake</span><span class="chip ca">aNet Ingestion</span><span class="chip ca">Microservice Data Ingestion</span><span class="chip co">Pipeline observability</span><span class="chip co">DR SLAs</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Corey Connally — Pipelines</div><div class="chips"><span class="chip ca">Data Pipelines</span><span class="chip ca">VBC Data Pipelines</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Raghuram L — Imports</div><div class="chips"><span class="chip ca">Data Imports</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">John Bauer — Migrations</div><div class="chips"><span class="chip ca">Migrations &amp; Config Management</span></div></div>
-            <div class="owngrp"><div class="owngrplabel" style="color:var(--grd)">Sagar Joshi — Life Sciences RWD</div><div class="chips"><span class="chip ca">Real World Data Platform</span></div></div>
+          <div class="ownhead" style="background:#F0FDF7">
+            <div class="ownname" style="color:var(--grd)">Data Ingestion, Movement &amp; Reliability</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Vijay Rajagopal · 5 direct reports</div>
+          </div>
+          <div class="owncols">
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Now</div>
+              <ul class="blist">
+                <li>Owns the trust and reliability layer that every other team depends on — Data Lake, all ingestion pipelines, Imports, Migrations, and Config Management</li>
+                <li>Manages VBC Data Pipelines and Life Sciences Real World Data platform</li>
+                <li>Builds and enforces the tiered pipeline observability framework — client-critical pipelines are monitored and triaged before clients ever notice a problem</li>
+                <li>Sets and enforces DR SLAs across the full data ingestion layer</li>
+                <li>Establishes athenahealth as a data company clients and internal teams can trust implicitly</li>
+              </ul>
+            </div>
+            <div class="owncol">
+              <div class="owncolhead" style="color:var(--grd)">Future</div>
+              <ul class="blist">
+                <li>Real-time data as a product tier — the data lake moves from nightly batch to continuous refresh, unlocking a new class of time-sensitive analytics products that batch processing cannot support</li>
+                <li>Life Sciences RWD grows from an internal platform into a commercially significant standalone product as the real-world evidence market expands — Vijay owns this as a growth business, not just infrastructure</li>
+                <li>The data reliability brand becomes a genuine competitive differentiator — pipeline observability, data quality standards, and SLA enforcement position athenahealth's data network as the most trusted in ambulatory health IT</li>
+                <li>As the ingestion foundation matures and stabilizes, Data Lake scope transitions to Suhas and Vijay's zone evolves toward higher-order data services and real-time infrastructure</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
