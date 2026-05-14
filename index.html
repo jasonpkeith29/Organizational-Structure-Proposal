@@ -19,20 +19,17 @@
   --fn:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 }
 body{font-family:var(--fn);background:var(--bg);color:var(--tx);line-height:1.5}
-
 nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--bo);padding:0 32px}
 .navi{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px;gap:8px}
 .nbrand{font-size:13px;font-weight:600;color:var(--pu)}
 .nlinks{display:flex;gap:20px}
 .nlinks a{font-size:12px;color:var(--tx2);text-decoration:none}
 .nlinks a:hover{color:var(--pu)}
-
 .sec{padding:60px 32px}
 .inner{max-width:1000px;margin:0 auto}
 .sl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
 .st{font-size:26px;font-weight:600;line-height:1.3;margin-bottom:8px}
 .ss{font-size:14px;color:var(--tx2);line-height:1.7;max-width:640px;margin-bottom:24px}
-
 .hero{background:linear-gradient(135deg,#1a1560,#2d27a0,#534AB7);color:#fff;padding:80px 32px}
 .hero .sl{color:rgba(255,255,255,.6)}
 .hero .st{font-size:36px;color:#fff;max-width:560px}
@@ -41,8 +38,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .hstat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:14px 18px;min-width:130px}
 .hstn{font-size:26px;font-weight:600;color:#fff}
 .hstl{font-size:11px;color:rgba(255,255,255,.65);margin-top:3px;line-height:1.4}
-
-/* Problems */
 .pgrid{display:flex;flex-direction:column;gap:10px;margin-top:4px}
 .prob{border-radius:10px;border:1px solid var(--bo);overflow:hidden}
 .ph{display:flex;gap:12px;align-items:flex-start;padding:14px 18px}
@@ -54,7 +49,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .pbc{flex:1;min-width:180px}
 .pbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--tx3);margin-bottom:5px}
 .pbt{font-size:12px;color:var(--tx2);line-height:1.6}
-
 .relbox{margin-top:24px;border:1px solid var(--bo);border-radius:10px;overflow:hidden}
 .relh{padding:12px 18px;background:var(--bg2);border-bottom:1px solid var(--bo)}
 .relht{font-size:13px;font-weight:600;color:var(--tx2)}
@@ -65,8 +59,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .reltit{font-size:13px;font-weight:600;margin-bottom:4px}
 .reldesc{font-size:12px;color:var(--tx2);line-height:1.5}
 .relown{font-size:11px;color:var(--tx3);margin-top:5px}
-
-/* Structure */
 .fbar{display:flex;border:1px solid var(--bo);border-radius:10px;overflow:hidden;margin:20px 0 6px;flex-wrap:wrap;align-items:stretch}
 .fs{flex:1;min-width:150px;padding:12px 14px;border-right:1px solid var(--bo);display:flex;flex-direction:column}
 .fs:last-child{border-right:none}
@@ -76,12 +68,25 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .fstag{font-size:9px;padding:1px 6px;border-radius:8px;border:1px solid;display:inline-block;align-self:flex-start;margin-top:auto}
 .fnote{font-size:11px;color:var(--tx3);margin-bottom:20px}
 .llist{display:flex;flex-direction:column;gap:8px}
-.lrow{border-radius:8px;border:1.5px solid;padding:12px 16px;display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
-.ll{min-width:180px;flex-shrink:0}
+.lrow{border-radius:8px;border:1.5px solid;padding:12px 16px;display:flex;gap:16px;align-items:flex-start}
+.ll{width:220px;flex-shrink:0}
 .lln{font-size:10px;font-weight:600;text-transform:uppercase;opacity:.5;margin-bottom:2px}
 .llt{font-size:13px;font-weight:600;margin-bottom:4px}
 .lltag{font-size:9px;padding:1px 6px;border-radius:8px;border:1px solid;display:inline-block}
 .lright{flex:1;font-size:13px;color:var(--tx2);line-height:1.6}
+
+/* Callout boxes */
+.callout{border-radius:12px;padding:20px 24px;margin-bottom:24px}
+.callout-head{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.callout-body{font-size:13px;line-height:1.8}
+
+/* Platform consolidation diagram */
+.consol{display:flex;gap:0;margin:20px 0 8px;border:1px solid var(--bo);border-radius:10px;overflow:hidden}
+.consolcol{flex:1;padding:14px 16px;border-right:1px solid var(--bo);display:flex;flex-direction:column;gap:6px}
+.consolcol:last-child{border-right:none}
+.consolphase{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid var(--bo)}
+.consolitem{font-size:12px;padding:7px 10px;border-radius:6px;border:1px solid;font-weight:600;text-align:center;line-height:1.3}
+.consolnote{font-size:11px;color:var(--tx3);margin-top:16px;line-height:1.6}
 
 /* Org zone box */
 .oz{background:linear-gradient(135deg,#1a1560,#534AB7);border-radius:12px;padding:18px 22px;margin-bottom:24px;display:flex;gap:16px;flex-wrap:wrap}
@@ -90,15 +95,38 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .oztext{font-size:13px;color:rgba(255,255,255,.9);line-height:1.7}
 .ozrel{font-size:12px;color:rgba(255,255,255,.8);line-height:1.9}
 
+/* Design rationale */
+.ratgrid{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.rat{flex:1;min-width:200px;border-radius:10px;border:1px solid var(--bo);padding:14px 16px;background:var(--bg)}
+.ratn{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--tx3);margin-bottom:5px}
+.ratt{font-size:13px;font-weight:600;margin-bottom:5px}
+.ratd{font-size:12px;color:var(--tx2);line-height:1.6}
+
+/* Boundary box */
+.boundary{border:1.5px solid var(--bo);border-radius:10px;overflow:hidden;margin-top:24px}
+.boundaryh{padding:12px 18px;background:var(--bg2);border-bottom:1px solid var(--bo);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.boundarytit{font-size:13px;font-weight:600}
+.boundarysub{font-size:11px;color:var(--tx3)}
+.boundarycols{display:flex;flex-wrap:wrap}
+.boundarycol{flex:1;min-width:200px;padding:14px 18px;border-right:1px solid var(--bo)}
+.boundarycol:last-child{border-right:none}
+.boundarycolh{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.boundaryitem{font-size:12px;color:var(--tx2);line-height:1.6;padding:4px 0;border-bottom:1px solid var(--bo);display:flex;gap:8px}
+.boundaryitem:last-child{border-bottom:none}
+.boundaryarr{color:var(--tx3);flex-shrink:0;font-size:11px;margin-top:3px}
+.opentag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--aml);border:1px solid var(--am);color:var(--amd);white-space:nowrap}
+
 /* Tabs */
-.tabbar{display:flex;border:2px solid var(--pum);border-radius:10px;overflow:hidden;max-width:520px;margin-bottom:24px}
+.tabwrap{margin-bottom:8px}
+.tabbar{display:flex;border:2px solid var(--pum);border-radius:10px;overflow:hidden;max-width:580px;margin-bottom:6px}
 .tab{flex:1;padding:12px 16px;font-size:13px;font-weight:600;cursor:pointer;text-align:center;border:none;font-family:var(--fn);user-select:none;transition:background .15s,color .15s}
+.tabdesc{font-size:12px;color:var(--tx3);margin-bottom:20px;max-width:580px}
 .panel{display:none}
 .panel.active{display:block}
 
 /* Org chart */
-.couter{overflow-x:auto;padding:0 20px 8px}
-.ci{display:flex;flex-direction:column;align-items:center;min-width:700px}
+.couter{overflow-x:auto;padding:0 4px 8px}
+.ci{display:flex;flex-direction:column;align-items:center;min-width:750px}
 .v{width:2px;height:18px;background:var(--bo);margin:0 auto}
 .h{height:2px;background:var(--bo)}
 .br{display:flex;justify-content:space-around}
@@ -112,7 +140,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .cv{background:var(--grl);border-color:var(--gr);color:var(--grd)}
 .ch{background:var(--aml);border-color:var(--am);color:var(--amd)}
 .cray{background:var(--grl);border-color:var(--gr);color:var(--grd)}
-.cjason{background:var(--pul);border-color:var(--pum);color:#26215C;border-style:dashed}
 .cfuture{background:var(--bg2);border-color:var(--bo);color:var(--tx3);border-style:dashed}
 .directs{display:flex;gap:8px;width:100%}
 .dcol{flex:1;display:flex;flex-direction:column;align-items:center}
@@ -120,12 +147,15 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .sc{flex:1;border:1px solid var(--bo);border-radius:5px;padding:4px 3px;text-align:center;background:var(--bg2)}
 .scn{font-size:9px;font-weight:600;line-height:1.3}
 .scr{font-size:8px;color:var(--tx3);margin-top:1px}
-.snowbox{margin:12px 20px 0;border:1.5px dashed var(--pum);border-radius:8px;padding:10px 14px;background:var(--pul)}
+.snowbox{margin:14px 0 0;border:1.5px dashed var(--pum);border-radius:8px;padding:10px 14px;background:var(--pul)}
 .snowtit{font-size:11px;font-weight:600;color:#3C3489;margin-bottom:4px}
 .snowdesc{font-size:11px;color:#3C3489;line-height:1.6}
+.smebox{margin:12px 0 0;border:1.5px dashed var(--gr);border-radius:8px;padding:10px 14px;background:var(--grl)}
+.smetit{font-size:11px;font-weight:600;color:var(--grd);margin-bottom:4px}
+.smedesc{font-size:11px;color:var(--grd);line-height:1.6}
 
 /* Tradeoffs */
-.trades{display:flex;gap:10px;flex-wrap:wrap;padding:12px 0 4px}
+.trades{display:flex;gap:10px;flex-wrap:wrap;padding:14px 0 4px}
 .trade{flex:1;min-width:160px;border-radius:8px;border:1px solid var(--bo);padding:10px 12px;background:var(--bg2)}
 .trlabel{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
 .trtext{font-size:12px;color:var(--tx2);line-height:1.6}
@@ -133,19 +163,17 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 .tr .trlabel{color:var(--red)}
 .tp .trlabel{color:#3C3489}
 
-/* Ownership blocks */
+/* Ownership */
 .owns{margin-top:28px}
 .ownlabel{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-bottom:12px}
 .ownblock{border-radius:10px;border:1.5px solid;margin-bottom:12px;overflow:hidden}
 .ownhead{padding:12px 18px;border-bottom:1px solid var(--bo)}
 .ownname{font-size:14px;font-weight:700}
 .ownrole{font-size:11px;opacity:.65;margin-top:3px}
-
-.owncols{display:flex;gap:0;flex-wrap:wrap}
+.owncols{display:flex;flex-wrap:wrap}
 .owncol{flex:1;min-width:220px;padding:14px 18px;border-right:1px solid var(--bo)}
 .owncol:last-child{border-right:none}
 .owncolhead{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--bo)}
-
 .blist{list-style:none;display:flex;flex-direction:column;gap:7px}
 .blist li{font-size:12px;color:var(--tx2);line-height:1.6;padding-left:14px;position:relative}
 .blist li::before{content:"•";position:absolute;left:0;color:var(--tx3);font-size:14px;line-height:1.3}
@@ -183,6 +211,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
     <div class="nlinks">
       <a href="#problems">Problems</a>
       <a href="#structure">Structure</a>
+      <a href="#consolidation">Platform Vision</a>
       <a href="#org">Organization</a>
       <a href="#timeline">Timeline</a>
       <a href="#northstar">North Star</a>
@@ -218,14 +247,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
       </div>
       <div class="prob">
         <div class="ph"><div class="pdot" style="background:var(--re)"></div><div><div class="ptit">Data View lacks product foundation — and no one owns the Snowflake relationship</div><div class="pdesc">Data View is a real commercial product but lacks basic artifacts — documentation, tooling, usage visibility. No one is proactively managing the Snowflake relationship or evaluating new platform features. These two gaps are deeply connected.</div></div><div class="pbadge" style="background:var(--rel);border-color:var(--re);color:var(--red)">Critical</div></div>
-        <div class="pbody"><div class="pbc"><div class="pbl">Impact today</div><div class="pbt">Data View stagnates without clear investment. Snowflake capabilities — including Cortex — evaluated reactively. The org is not getting full value from its most significant platform investment.</div></div><div class="pbc"><div class="pbl">How we solve it</div><div class="pbt">Suhas owns Data View as a commercial product. Snowflake strategy owned collectively by Jason, Raghu, and Amol, with Suhas leading engineering POCs and feature evaluation to determine rollout strategy.</div></div></div>
+        <div class="pbody"><div class="pbc"><div class="pbl">Impact today</div><div class="pbt">Data View stagnates without clear investment. Snowflake capabilities — including Cortex — evaluated reactively. The org is not getting full value from its most significant platform investment.</div></div><div class="pbc"><div class="pbl">How we solve it</div><div class="pbt">Suhas owns Data View as a commercial product reporting directly to Jason. Snowflake strategy owned collectively by Jason, Raghu, and Amol, with Suhas leading engineering POCs and feature evaluation.</div></div></div>
       </div>
       <div class="prob">
         <div class="ph"><div class="pdot" style="background:var(--am)"></div><div><div class="ptit">Data teams are modeling and pushing to Snowflake with no guardrails and no shared platform</div><div class="pdesc">Analytics teams build models and pipelines independently — no standards, no governance, no common toolset. The result is inconsistent data quality, duplicated effort, and ongoing friction with the analytics organization.</div></div><div class="pbadge" style="background:var(--aml);border-color:var(--am);color:var(--amd)">High</div></div>
         <div class="pbody"><div class="pbc"><div class="pbl">Impact today</div><div class="pbt">AES is a friction source, not an enabler. No gold standard for data models. Engineering bottlenecked on requests that should be self-serve. Analytics org frustrated by inconsistency.</div></div><div class="pbc"><div class="pbl">How we solve it</div><div class="pbt">A dedicated Data Governance PM owns the AES platform — setting the standard for how data teams model and push to Snowflake, with automation and guardrails baked in.</div></div></div>
       </div>
       <div class="prob">
-        <div class="ph"><div class="pdot" style="background:var(--am)"></div><div><div class="ptit">We've built a strong reporting foundation — but custom analytics remains out of reach for smaller practices</div><div class="pdesc">Data View gives sophisticated customers direct access to their data, and our Sigma investment has meaningfully improved standard reporting. But smaller practices still can't get answers to questions that don't fit a pre-built dashboard and don't justify the overhead of a full data feed.</div></div><div class="pbadge" style="background:var(--aml);border-color:var(--am);color:var(--amd)">High</div></div>
+        <div class="ph"><div class="pdot" style="background:var(--am)"></div><div><div class="ptit">Custom analytics remains out of reach for smaller practices</div><div class="pdesc">Data View gives sophisticated customers direct access to their data, and our Sigma investment has meaningfully improved standard reporting. But smaller practices still can't get answers to questions that don't fit a pre-built dashboard and don't justify the overhead of a full data feed.</div></div><div class="pbadge" style="background:var(--aml);border-color:var(--am);color:var(--amd)">High</div></div>
         <div class="pbody"><div class="pbc"><div class="pbl">Impact today</div><div class="pbt">Smaller practices can't get custom analytics without significant overhead. Pre-built dashboards don't fit every workflow. A large portion of customers are underserved on custom reporting.</div></div><div class="pbc"><div class="pbl">How we solve it</div><div class="pbt">Migrate from the legacy operational reporting platform to a Generative BI tool — clients spin up their own reports and metrics on demand. AI-native interface makes custom analytics accessible to any practice size.</div></div></div>
       </div>
       <div class="prob">
@@ -236,9 +265,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
     <div class="relbox">
       <div class="relh"><div class="relht">Foundational reliability gaps we are also addressing</div><div class="relhd">Known risks that have lacked dedicated product ownership. This structure gives them a home.</div></div>
       <div class="relitems">
-        <div class="relitem"><div class="reltit">Pipeline observability</div><div class="reldesc">No consistent monitoring framework distinguishing client-critical from internal pipelines.</div><div class="relown">Product lead: Vijay / Lindsey Cohenno</div></div>
-        <div class="relitem"><div class="reltit">Data lineage</div><div class="reldesc">No clear picture of where data came from, how it was transformed, or who touched it.</div><div class="relown">Product lead: Data Governance PM · AES workstream</div></div>
-        <div class="relitem" style="border-right:none"><div class="reltit">Disaster recovery</div><div class="reldesc">Recovery expectations and SLAs for client-critical data products not consistently defined or enforced.</div><div class="relown">Product lead: Suhas Vasu / Vijay Rajagopal</div></div>
+        <div class="relitem"><div class="reltit">Pipeline observability</div><div class="reldesc">No consistent monitoring framework distinguishing client-critical from internal pipelines.</div><div class="relown">Owner: Vijay Rajagopal</div></div>
+        <div class="relitem"><div class="reltit">Data lineage</div><div class="reldesc">No clear picture of where data came from, how it was transformed, or who touched it.</div><div class="relown">Owner: Data Governance PM</div></div>
+        <div class="relitem" style="border-right:none"><div class="reltit">Disaster recovery</div><div class="reldesc">Recovery expectations and SLAs for client-critical data products not consistently defined or enforced.</div><div class="relown">Owner: Suhas Vasu / Vijay Rajagopal</div></div>
       </div>
     </div>
   </div>
@@ -251,10 +280,10 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
     <div class="st">Four layers. Each one solves a specific problem.</div>
     <div class="ss">Every structural decision maps directly back to one of the five problems above. The org is built around the work.</div>
     <div class="fbar">
-      <div class="fs" style="background:#F0FDF7"><div class="fsn" style="color:var(--grd)">Layer 1</div><div class="fst" style="color:var(--grd)">Data ingestion &amp; movement</div><div class="fsd" style="color:var(--grd)">Gets data in. Keeps the foundation stable.</div><div class="fstag" style="background:var(--gyl);border-color:var(--gy);color:var(--gyd)">Solves problem 5</div></div>
+      <div class="fs" style="background:#F0FDF7"><div class="fsn" style="color:var(--grd)">Layer 1</div><div class="fst" style="color:var(--grd)">Data ingestion &amp; movement</div><div class="fsd" style="color:var(--grd)">Gets data in. Keeps the foundation stable and trusted.</div><div class="fstag" style="background:var(--gyl);border-color:var(--gy);color:var(--gyd)">Solves problem 5</div></div>
       <div class="fs" style="background:#EAF2FF"><div class="fsn" style="color:var(--bld)">Layer 2</div><div class="fst" style="color:var(--bld)">Data creation &amp; platform enablement</div><div class="fsd" style="color:var(--bld)">Models, governs &amp; structures. The connective tissue.</div><div class="fstag" style="background:var(--rel);border-color:var(--re);color:var(--red)">Solves problems 2 &amp; 3</div></div>
-      <div class="fs" style="background:#FFFBF0"><div class="fsn" style="color:#854F0B">Layer 3</div><div class="fst" style="color:#854F0B">Behavioral intelligence</div><div class="fsd" style="color:#854F0B">Surfaces data internally. Trusted, self-serve.</div><div class="fstag" style="background:var(--rel);border-color:var(--re);color:var(--red)">Solves problem 1</div></div>
-      <div class="fs" style="background:#F5F3FF"><div class="fsn" style="color:#3C3489">Layer 4</div><div class="fst" style="color:#3C3489">Client analytics &amp; AI reporting</div><div class="fsd" style="color:#3C3489">Surfaces data externally. Generative BI. Any practice.</div><div class="fstag" style="background:var(--aml);border-color:var(--am);color:var(--amd)">Solves problem 4</div></div>
+      <div class="fs" style="background:#FFFBF0"><div class="fsn" style="color:#854F0B">Layer 3</div><div class="fst" style="color:#854F0B">Behavioral intelligence</div><div class="fsd" style="color:#854F0B">Surfaces data internally. Trusted, self-serve, org-wide.</div><div class="fstag" style="background:var(--rel);border-color:var(--re);color:var(--red)">Solves problem 1</div></div>
+      <div class="fs" style="background:#F5F3FF"><div class="fsn" style="color:#3C3489">Layer 4</div><div class="fst" style="color:#3C3489">Client analytics &amp; AI reporting</div><div class="fsd" style="color:#3C3489">Surfaces data externally. Generative BI. Any practice size.</div><div class="fstag" style="background:var(--aml);border-color:var(--am);color:var(--amd)">Solves problem 4</div></div>
     </div>
     <div class="fnote">Each layer depends on the one to its left. Data creation &amp; platform enablement is the connective tissue — stabilize it first and everything downstream accelerates.</div>
     <div class="llist">
@@ -263,6 +292,83 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
       <div class="lrow" style="border-color:var(--am);background:#FFFBF0"><div class="ll"><div class="lln" style="color:#854F0B">Layer 3</div><div class="llt" style="color:#854F0B">Behavioral intelligence</div><div class="lltag" style="background:var(--rel);border-color:var(--re);color:var(--red)">Solves problem 1</div></div><div class="lright">Dedicated owner rebuilds Amplitude to our specs — clinicals and athenaConnect workflows first, then broader rollout. Single trusted behavioral data layer. "Time" standardized org-wide.</div></div>
       <div class="lrow" style="border-color:var(--pu);background:#F5F3FF"><div class="ll"><div class="lln" style="color:#3C3489">Layer 4</div><div class="llt" style="color:#3C3489">Client analytics &amp; AI reporting</div><div class="lltag" style="background:var(--aml);border-color:var(--am);color:var(--amd)">Solves problem 4</div></div><div class="lright">Migrate from legacy operational reporting to a Generative BI tool — clients spin up their own reports and metrics on demand. Every practice gets useful analytics regardless of size. Legacy reporting sunset in parallel to clear the runway.</div></div>
     </div>
+
+    <!-- Boundary box -->
+    <div class="boundary">
+      <div class="boundaryh">
+        <div class="boundarytit">Working model: Jason's org and Alicia's org</div>
+        <div class="boundarysub">Swim lanes that need to stay clear for both orgs to move fast</div>
+      </div>
+      <div class="boundarycols">
+        <div class="boundarycol">
+          <div class="boundarycolh" style="color:var(--pu)">Jason's org owns</div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>Sigma engineering — all platform changes, upgrades, and technical capabilities</div></div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>RBAC, PHI MOD Reporting, and all infrastructure decisions within Sigma</div></div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>Behavioral analytics platform and the data layer feeding it</div></div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>Data View, Snowflake platform strategy, and the data governance standard</div></div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>Generative BI tool selection and the operational reporting migration</div></div>
+        </div>
+        <div class="boundarycol">
+          <div class="boundarycolh" style="color:var(--gr)">Alicia's org owns</div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>Content strategy and all dashboards built within Sigma</div></div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>Customer-facing analytics content and dashboard publishing</div></div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>Analytics interpretation and insight delivery to internal stakeholders</div></div>
+        </div>
+        <div class="boundarycol">
+          <div class="boundarycolh" style="color:var(--am)">Open question requiring Sam's input</div>
+          <div class="boundaryitem"><div class="boundaryarr">→</div><div>AI for analytics — Alicia's org is leaning on Sigma's native AI functions; Jason's org is oriented toward building from the ground up in line with the broader platform strategy Sam is outlining. <strong>This needs resolution at the leadership level before either team commits to a roadmap.</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PLATFORM CONSOLIDATION -->
+<div class="sec" id="consolidation">
+  <div class="inner">
+    <div class="sl" style="color:var(--pu)">The long-range Snowflake vision</div>
+    <div class="st">One owner of Snowflake, Data View, and the Data Lake.</div>
+    <div class="ss">Today Snowflake strategy is a collective, Data View has a dedicated owner, and the Data Lake sits under Vijay's reliability zone — each by design for where we are now. The long-range intention is deliberate consolidation around a single Snowflake platform leader who owns the full commercial data layer from raw ingestion through governed, monetized product.</div>
+
+    <div class="consol">
+      <div class="consolcol" style="background:#F5FFFA">
+        <div class="consolphase" style="color:var(--grd)">Now · 2025</div>
+        <div class="consolitem" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Data Lake · Vijay's reliability zone</div>
+        <div class="consolitem" style="background:var(--pul);border-color:var(--pum);color:#26215C">Snowflake strategy · Jason + Raghu + Amol collective</div>
+        <div class="consolitem" style="background:var(--pul);border-color:var(--pum);color:#26215C">Snowflake POC &amp; evaluation · Suhas</div>
+        <div class="consolitem" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Data View · Suhas</div>
+        <div style="font-size:11px;color:var(--grd);margin-top:10px;line-height:1.6">Three separate ownership areas. Necessary for today — Suhas is proving the Data View commercial story while the collective Snowflake strategy gets established.</div>
+      </div>
+      <div class="consolcol" style="background:#EAF2FF">
+        <div class="consolphase" style="color:var(--bld)">Near term · 2026</div>
+        <div class="consolitem" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Data Lake · beginning transition</div>
+        <div class="consolitem" style="background:var(--pul);border-color:var(--pum);color:#26215C">Snowflake strategy · transitioning to single owner</div>
+        <div class="consolitem" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Data View · expanding commercially</div>
+        <div style="font-size:11px;color:var(--bld);margin-top:10px;line-height:1.6">As the Data View commercial story matures and Snowflake governance stabilizes, strategic Snowflake ownership transitions from the collective to a single accountable leader.</div>
+      </div>
+      <div class="consolcol" style="background:#F5F3FF">
+        <div class="consolphase" style="color:#3C3489">End state · 2027</div>
+        <div class="consolitem" style="background:var(--pul);border-color:var(--pum);color:#26215C">Snowflake + Data View + Data Lake · one owner</div>
+        <div style="font-size:11px;color:#3C3489;margin-top:10px;line-height:1.6">One accountable leader — Suhas or a successor hired into this scope — owns the full Snowflake commercial platform: raw ingestion, governed data, and monetized product. The org is designed today to make this transition natural, not disruptive.</div>
+      </div>
+    </div>
+    <div class="consolnote">This consolidation is not a reorganization — it is a planned evolution built into the design from day one. Vijay's zone does not shrink when the Data Lake transitions; it sharpens. His focus shifts fully to real-time infrastructure, Life Sciences RWD as a commercial product, and the data reliability layer the entire org depends on.</div>
+  </div>
+</div>
+
+<!-- ORG DESIGN RATIONALE -->
+<div class="sec" style="background:var(--bg2);padding-top:0;padding-bottom:48px">
+  <div class="inner">
+    <div class="divider"></div>
+    <div class="sl" style="color:var(--tx3)">How this org was designed</div>
+    <div class="st" style="font-size:22px">Structure follows people, not the other way around.</div>
+    <div class="ss">The reporting lines and mandates below were shaped by an honest assessment of where each leader's energy, track record, and growth edge actually sit — not by a blank org chart filled in after the fact.</div>
+    <div class="ratgrid">
+      <div class="rat"><div class="ratn">Suhas Vasu</div><div class="ratt">Commercial platform leader</div><div class="ratd">Deep technical credibility, strong Snowflake orientation, proven on Data View. Reports directly to Jason to keep the commercial platform story at the right level and position him to absorb the Data Lake over time.</div></div>
+      <div class="rat"><div class="ratn">Bridget Burdick</div><div class="ratt">Analytics intelligence leader</div><div class="ratd">Strongest in cross-functional orchestration, platform thinking, and the Sigma and Insights ecosystem. Mandate is scoped to where her energy is highest — behavioral analytics, Sigma engineering, and in Version A, the operational reporting migration.</div></div>
+      <div class="rat"><div class="ratn">Vijay Rajagopal</div><div class="ratt">Data reliability leader</div><div class="ratd">High-ownership operator with deep client relationships and genuine passion for imports, ingestion, and the interoperability layer. Zone sharpens over time as Data Lake transitions and real-time infrastructure becomes the growth story.</div></div>
+      <div class="rat"><div class="ratn">Ray Cook</div><div class="ratt">Governance and AI reporting (Version B) · SME (Version A)</div><div class="ratd">Deep domain knowledge across data governance and operational reporting. In Version B, owns both mandates as a senior IC with teams building underneath. In Version A, serves as a named structured partner across both workstreams without an org move.</div></div>
+    </div>
   </div>
 </div>
 
@@ -270,45 +376,53 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 <div class="sec" id="org">
   <div class="inner">
     <div class="sl" style="color:var(--gr)">The organization</div>
-    <div class="st">One zone. One mandate. Two structural options.</div>
-    <div class="ss">The strategy is identical in both versions. The difference is one decision about Ray Cook — whether he contributes as an SME or joins the team as the owner of two critical mandates.</div>
+    <div class="st">One zone. One mandate. Two viable paths.</div>
+    <div class="ss">The strategy is identical in both versions. The difference is one conversation with Sam about Ray Cook — whether he joins the team or contributes as a deeply embedded SME. Both are real options, not a recommendation and a fallback.</div>
 
     <div class="oz">
       <div class="ozl"><div class="ozlabel">The one-zone principle</div><div class="oztext">This is one organization, not a collection of sub-teams. Leaders are expected to work across areas, share context, and hold each other accountable. Ownership defines accountability, not territory.</div></div>
-      <div class="ozl"><div class="ozlabel">Critical working relationships</div><div class="ozrel">Suhas ↔ Jason/Raghu/Amol — Snowflake POC and evaluation feeds collective strategy<br>Data Governance PM ↔ Suhas — AES governance standard shapes Snowflake platform usage<br>Bridget ↔ Alicia — Behavioral intelligence and analytics org co-designed<br>Operational Reporting PM ↔ Data Governance PM — Generative BI vision needs platform foundation<br>Ray Cook — SME across both areas in Version A · Owner of both in Version B</div></div>
+      <div class="ozl"><div class="ozlabel">Critical working relationships</div><div class="ozrel">Suhas ↔ Jason/Raghu/Amol — Snowflake POC feeds collective platform strategy<br>Data Governance PM ↔ Suhas — governance standard shapes Snowflake platform usage<br>Bridget ↔ Alicia — Sigma engineering and analytics content co-designed<br>Bridget ↔ Data Governance PM — Generative BI vision needs platform foundation<br>Ray Cook — structured SME in Version A · full owner in Version B</div></div>
     </div>
 
-    <div class="tabbar">
-      <div class="tab" id="tab-a">Version A — Ray as SME</div>
-      <div class="tab" id="tab-b">Version B — Ray on the team ★</div>
+    <div class="tabwrap">
+      <div class="tabbar">
+        <div class="tab" id="tab-a">Version A — Ray as embedded SME</div>
+        <div class="tab" id="tab-b">Version B — Ray on the team ★</div>
+      </div>
+      <div class="tabdesc" id="tab-desc"></div>
     </div>
 
-    <!-- ===== PANEL A ===== -->
+    <!-- PANEL A -->
     <div class="panel" id="panel-a">
-
-      <!-- Org chart A -->
       <div class="couter">
         <div class="ci">
           <div class="card cj" style="min-width:240px"><div class="cn">Jason Keith</div><div class="cr2">Executive Director, Product Management · Data &amp; Analytics Platform</div></div>
           <div class="v"></div>
-          <div class="h" style="width:960px;max-width:100%"></div>
-          <div class="br" style="width:960px;max-width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
-          <div class="directs" style="max-width:960px">
+          <div class="h" style="width:100%;max-width:900px"></div>
+          <div class="br" style="width:100%;max-width:900px"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
+          <div class="directs" style="max-width:900px">
             <div class="dcol">
-              <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View<br>Snowflake POC &amp; evaluation lead</div></div>
+              <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View &amp; Snowflake POC</div></div>
+              <div class="v"></div>
+              <div class="cfuture card" style="width:100%"><div class="cn" style="color:var(--tx3)">Data Lake team</div><div class="cr2">Long-range destination</div></div>
             </div>
             <div class="dcol">
-              <div class="card ch" style="width:100%"><div class="cn">New Hire #2</div><div class="cr2">Data Governance PM<br>AES platform · modeling standards · pipeline governance</div></div>
+              <div class="card ch" style="width:100%"><div class="cn">New Hire #2</div><div class="cr2">Data Governance Specialist · AES platform · modeling standards · pipeline governance</div></div>
               <div class="v"></div>
               <div class="cfuture card" style="width:100%"><div class="cn" style="color:var(--tx3)">Data Governance team</div><div class="cr2">Builds beneath this role over time</div></div>
             </div>
             <div class="dcol">
-              <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Behavioral Analytics, Sigma &amp; Operational Reporting</div></div>
+              <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Sigma Engineering, Behavioral Analytics &amp; Operational Reporting</div></div>
               <div class="v"></div>
-              <div class="card ch" style="width:100%"><div class="cn">New Hire #1</div><div class="cr2">Behavioral Analytics PM</div></div>
+              <div class="h" style="width:100%"></div>
+              <div class="br" style="width:100%"><div class="v"></div><div class="v"></div></div>
+              <div style="display:flex;gap:5px;width:100%">
+                <div class="card ch" style="flex:1"><div class="cn">New Hire #1</div><div class="cr2">Behavioral Analytics PM</div></div>
+                <div class="cfuture card" style="flex:1"><div class="cn" style="color:var(--tx3)">AI Reporting PM</div><div class="cr2">Future hire as product scales</div></div>
+              </div>
             </div>
             <div class="dcol">
-              <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Services &amp; Ingestion</div></div>
+              <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Ingestion, Movement &amp; Reliability</div></div>
               <div class="v"></div><div class="h" style="width:100%"></div>
               <div class="br" style="width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
               <div class="subcards">
@@ -324,34 +438,33 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
       </div>
 
       <div class="snowbox">
-        <div class="snowtit">Snowflake ownership — collective model (both versions)</div>
-        <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction, feature adoption decisions, and org-wide governance standards.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features and tools, validates them, and determines how to roll them out across the broader organization.</div>
+        <div class="snowtit">Snowflake ownership — collective model</div>
+        <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction and feature adoption decisions.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features, validates them, and determines rollout strategy across the org. Long-range: Suhas takes full strategic ownership as the collective model matures.</div>
       </div>
 
-      <div style="margin:14px 0 4px;padding:12px 16px;border-radius:8px;border:1.5px dashed var(--gr);background:var(--grl)">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--grd);margin-bottom:5px">Ray Cook — embedded SME (Version A)</div>
-        <div style="font-size:12px;color:var(--grd);line-height:1.7">Ray remains in Alicia's org but serves as a named, structured SME across two workstreams: <strong>Bridget's operational reporting migration</strong> — actively partnering on tool selection, legacy sunset, and the Generative BI transition — and <strong>the Data Governance buildout</strong> — shaping the AES platform standards and governance framework alongside New Hire #2. Ray's involvement is defined, not ad hoc.</div>
+      <div class="smebox">
+        <div class="smetit">Ray Cook — embedded SME across two structured workstreams (Version A)</div>
+        <div class="smedesc">Ray remains in Alicia's org but has defined, named involvement across two areas. <strong>Data Governance:</strong> active partner on AES platform standards, the governance framework, and the analytics org relationship reset — working directly alongside New Hire #2 from day one. <strong>Operational Reporting:</strong> embedded partner on Generative BI tool selection, legacy sunset strategy, and the client migration path — working directly with Bridget throughout the transition. Ray's involvement is structured and accountable, not ad hoc.</div>
       </div>
 
       <div class="trades">
-        <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Budget neutral. Alicia retains Ray. A dedicated Data Governance specialist can go deeper on platform governance than a generalist PM could. Ray's expertise is accessible across both critical workstreams without a political org move.</div></div>
-        <div class="trade tr"><div class="trlabel">The risk</div><div class="trtext">Ray's time is shared — his involvement depends on Alicia's continued goodwill and scheduling. Bridget carries a wide mandate in year one. The Data Governance hire needs to ramp quickly.</div></div>
+        <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Budget neutral. Alicia retains Ray. A dedicated Data Governance specialist goes deeper on platform governance than a generalist could. Ray's expertise is accessible across both critical workstreams without a political org move.</div></div>
+        <div class="trade tr"><div class="trlabel">The risk</div><div class="trtext">Ray's time is shared — his involvement depends on Alicia's continued goodwill and scheduling priorities. Bridget carries a wide mandate in year one including the operational reporting migration.</div></div>
       </div>
 
-      <!-- Ownership A -->
       <div class="owns">
         <div class="ownlabel">Product ownership — Version A</div>
 
         <div class="ownblock" style="border-color:var(--gr)">
           <div class="ownhead" style="background:#F0FDF7">
             <div class="ownname" style="color:var(--grd)">Data View &amp; Snowflake Platform</div>
-            <div class="ownrole" style="color:var(--grd)">Owner: Suhas Vasu</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Suhas Vasu · Reports directly to Jason</div>
           </div>
           <div class="owncols">
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Now</div>
               <ul class="blist">
-                <li>Owns Data View as a commercial product — documentation, tooling, and usage visibility</li>
+                <li>Owns Data View as a commercial product — documentation, tooling, usage visibility, and customer expansion</li>
                 <li>Leads the engineering team running Snowflake POCs and feature evaluations</li>
                 <li>Feeds rollout recommendations to Jason, Raghu, and Amol</li>
                 <li>Drives Cortex validation, data lineage strategy, and DR product requirements</li>
@@ -361,8 +474,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
               <div class="owncolhead" style="color:var(--grd)">Future</div>
               <ul class="blist">
                 <li>Takes full Snowflake strategic ownership as the collective model matures</li>
-                <li>Absorbs the Data Lake team — one leader across the full data platform commercial layer</li>
-                <li>Becomes the definitive owner of how athenahealth's data platform is monetized and governed</li>
+                <li>Data Lake team transitions under this role — one owner of the full commercial data platform layer from ingestion through monetized product</li>
+                <li>Becomes the definitive owner of how athenahealth's data platform is governed and grown commercially</li>
               </ul>
             </div>
           </div>
@@ -390,7 +503,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
                 <li>Platform matures from active builder to governance steward — standards enforced, not negotiated</li>
                 <li>Any data team member builds and deploys gold-standard models without engineering bottlenecks</li>
                 <li>Data lineage, quality scoring, and observability become fully automated</li>
-                <li>A dedicated Data Governance team builds beneath this role as adoption scales across the org</li>
+                <li>A dedicated Data Governance team builds beneath this role as adoption scales</li>
               </ul>
             </div>
           </div>
@@ -398,7 +511,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 
         <div class="ownblock" style="border-color:var(--bl)">
           <div class="ownhead" style="background:var(--bll)">
-            <div class="ownname" style="color:var(--bld)">Behavioral Analytics, Sigma Engineering &amp; Operational Reporting</div>
+            <div class="ownname" style="color:var(--bld)">Sigma Engineering, Behavioral Analytics &amp; Operational Reporting</div>
             <div class="ownrole" style="color:var(--bld)">Owner: Bridget Burdick · Manages: Behavioral Analytics PM (New Hire #1) · Ray Cook embedded SME on Operational Reporting</div>
           </div>
           <div class="owncols">
@@ -408,14 +521,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
                 <li>Personally owns Sigma engineering, RBAC, PHI MOD Reporting, and the legacy sunset portfolio</li>
                 <li>Manages the Behavioral Analytics PM who rebuilds Amplitude and instruments key clinical and financial workflows</li>
                 <li>Establishes "time" as a single trusted metric every PM works from</li>
-                <li>Owns operational reporting platform and leads the legacy migration to a Generative BI tool, with Ray as a deeply embedded partner on tool selection and transition strategy</li>
+                <li>Owns operational reporting platform and leads the Generative BI migration, with Ray as a deeply embedded partner on tool selection and transition strategy</li>
               </ul>
             </div>
             <div class="owncol">
               <div class="owncolhead" style="color:var(--bld)">Future</div>
               <ul class="blist">
-                <li>Generative BI tool in production — operational reporting mandate evolves or consolidates once migration is complete</li>
-                <li>Client-facing behavioral analytics — practices see how their staff uses athenahealth, where time is lost, how clinician behavior shifts after new workflows</li>
+                <li>Generative BI in production — operational reporting mandate evolves as migration completes and an AI Reporting PM builds out the product</li>
+                <li>Client-facing behavioral analytics — practices see how their staff uses athenahealth, where time is lost, and how clinician behavior shifts after new workflows</li>
                 <li>Provider wellbeing and burnout analytics — a differentiated product built on the "time" metric that no EHR competitor does well</li>
                 <li>Network intelligence — athenahealth's 180K-physician network becomes a benchmarking lens by specialty, region, and practice size</li>
               </ul>
@@ -432,20 +545,19 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Now</div>
               <ul class="blist">
-                <li>Owns the trust and reliability layer that every other team depends on — Data Lake, all ingestion pipelines, Imports, Migrations, and Config Management</li>
+                <li>Owns the trust and reliability layer every other team depends on — Data Lake, all ingestion pipelines, Imports, Migrations, and Config Management</li>
                 <li>Manages VBC Data Pipelines and Life Sciences Real World Data platform</li>
-                <li>Builds and enforces the tiered pipeline observability framework — client-critical pipelines are monitored and triaged before clients ever notice a problem</li>
+                <li>Builds and enforces the tiered pipeline observability framework — client-critical pipelines triaged before clients notice a problem</li>
                 <li>Sets and enforces DR SLAs across the full data ingestion layer</li>
-                <li>Establishes athenahealth as a data company clients and internal teams can trust implicitly</li>
               </ul>
             </div>
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Future</div>
               <ul class="blist">
-                <li>Real-time data as a product tier — the data lake moves from nightly batch to continuous refresh, unlocking a new class of time-sensitive analytics products that batch processing cannot support</li>
-                <li>Life Sciences RWD grows from an internal platform into a commercially significant standalone product as the real-world evidence market expands — Vijay owns this as a growth business, not just infrastructure</li>
-                <li>The data reliability brand becomes a genuine competitive differentiator — pipeline observability, data quality standards, and SLA enforcement position athenahealth's data network as the most trusted in ambulatory health IT</li>
-                <li>As the ingestion foundation matures and stabilizes, Data Lake scope transitions to Suhas and Vijay's zone evolves toward higher-order data services and real-time infrastructure</li>
+                <li>Real-time data as a product tier — the data lake moves from nightly batch to continuous refresh, enabling a new class of time-sensitive analytics products</li>
+                <li>Life Sciences RWD grows from an internal platform into a commercially significant standalone product as the real-world evidence market expands</li>
+                <li>The data reliability brand becomes a genuine competitive differentiator — athenahealth's data network becomes the most trusted in ambulatory health IT</li>
+                <li>Data Lake transitions to Suhas's scope as the commercial platform consolidates; Vijay's zone sharpens around real-time infrastructure and data services</li>
               </ul>
             </div>
           </div>
@@ -453,22 +565,22 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
       </div>
     </div><!-- end panel-a -->
 
-    <!-- ===== PANEL B ===== -->
+    <!-- PANEL B -->
     <div class="panel" id="panel-b">
-
-      <!-- Org chart B -->
       <div class="couter">
         <div class="ci">
           <div class="card cj" style="min-width:240px"><div class="cn">Jason Keith</div><div class="cr2">Executive Director, Product Management · Data &amp; Analytics Platform</div></div>
           <div class="v"></div>
-          <div class="h" style="width:960px;max-width:100%"></div>
-          <div class="br" style="width:960px;max-width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
-          <div class="directs" style="max-width:960px">
+          <div class="h" style="width:100%;max-width:900px"></div>
+          <div class="br" style="width:100%;max-width:900px"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
+          <div class="directs" style="max-width:900px">
             <div class="dcol">
-              <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View<br>Snowflake POC &amp; evaluation lead</div></div>
+              <div class="card cs" style="width:100%"><div class="cn">Suhas Vasu</div><div class="cr2">Sr. PM · Data View &amp; Snowflake POC</div></div>
+              <div class="v"></div>
+              <div class="cfuture card" style="width:100%"><div class="cn" style="color:var(--tx3)">Data Lake team</div><div class="cr2">Long-range destination</div></div>
             </div>
             <div class="dcol">
-              <div class="card cray" style="width:100%"><div class="cn">Ray Cook</div><div class="cr2">Sr. IC · Data Governance PM &amp; Operational Reporting &amp; AI Reporting PM</div><div class="cb" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Two mandates · No direct reports initially</div></div>
+              <div class="card cray" style="width:100%"><div class="cn">Ray Cook</div><div class="cr2">Sr. IC · Data Governance + Operational Reporting &amp; AI Reporting</div><div class="cb" style="background:var(--grl);border-color:var(--gr);color:var(--grd)">Two mandates · Teams build over time</div></div>
               <div class="v"></div>
               <div class="h" style="width:100%"></div>
               <div class="br" style="width:100%"><div class="v"></div><div class="v"></div></div>
@@ -478,12 +590,12 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
               </div>
             </div>
             <div class="dcol">
-              <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Behavioral Analytics &amp; Sigma</div></div>
+              <div class="card cbl2" style="width:100%"><div class="cn">Bridget Burdick</div><div class="cr2">Lead · Sigma Engineering &amp; Behavioral Analytics</div></div>
               <div class="v"></div>
               <div class="card ch" style="width:100%"><div class="cn">New Hire #1</div><div class="cr2">Behavioral Analytics PM</div></div>
             </div>
             <div class="dcol">
-              <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Services &amp; Ingestion</div></div>
+              <div class="card cv" style="width:100%"><div class="cn">Vijay Rajagopal</div><div class="cr2">Zone Leader · Data Ingestion, Movement &amp; Reliability</div></div>
               <div class="v"></div><div class="h" style="width:100%"></div>
               <div class="br" style="width:100%"><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div><div class="v"></div></div>
               <div class="subcards">
@@ -499,30 +611,29 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
       </div>
 
       <div class="snowbox">
-        <div class="snowtit">Snowflake ownership — collective model (both versions)</div>
-        <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction, feature adoption decisions, and org-wide governance standards.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features and tools, validates them, and determines how to roll them out across the broader organization.</div>
+        <div class="snowtit">Snowflake ownership — collective model</div>
+        <div class="snowdesc"><strong>Strategic ownership:</strong> Jason Keith · Raghu · Amol — shared accountability for platform direction and feature adoption decisions.<br><strong>Engineering POC &amp; evaluation:</strong> Suhas Vasu leads the engineering team that tests new Snowflake features, validates them, and determines rollout strategy across the org. Long-range: Suhas takes full strategic ownership as the collective model matures.</div>
       </div>
 
       <div class="trades">
-        <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Strongest org from day one. Both roles have a real owner immediately. Ray's domain expertise and relationships accelerate execution on the two hardest problems.</div></div>
-        <div class="trade tr"><div class="trlabel">The friction</div><div class="trtext">Ray moves from Alicia's org — requires leadership alignment. This conversation needs to happen before anything is announced.</div></div>
-        <div class="trade tp"><div class="trlabel">The recommendation</div><div class="trtext">Version B is the right structure strategically. Version A is the fallback if Ray's move isn't possible. Present both — let Sam help determine what's feasible.</div></div>
+        <div class="trade tg"><div class="trlabel">What works</div><div class="trtext">Strongest org from day one. Both mandates have a real owner immediately. Ray's domain expertise on governance and operational reporting accelerates execution on two of the hardest problems in the org. Bridget gets a focused mandate in her strongest areas.</div></div>
+        <div class="trade tr"><div class="trlabel">The friction</div><div class="trtext">Ray moves from Alicia's org — requires leadership alignment before anything is announced. Alicia loses a strong contributor. This conversation needs to happen with Sam first.</div></div>
+        <div class="trade tp"><div class="trlabel">Why Version B is recommended</div><div class="trtext">Both versions are real options, but Version B removes the dependency on Alicia's goodwill for Ray's time and gives every mandate a clear, accountable owner from day one. The org move is the only variable.</div></div>
       </div>
 
-      <!-- Ownership B -->
       <div class="owns">
         <div class="ownlabel">Product ownership — Version B</div>
 
         <div class="ownblock" style="border-color:var(--gr)">
           <div class="ownhead" style="background:#F0FDF7">
             <div class="ownname" style="color:var(--grd)">Data View &amp; Snowflake Platform</div>
-            <div class="ownrole" style="color:var(--grd)">Owner: Suhas Vasu</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Suhas Vasu · Reports directly to Jason</div>
           </div>
           <div class="owncols">
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Now</div>
               <ul class="blist">
-                <li>Owns Data View as a commercial product — documentation, tooling, and usage visibility</li>
+                <li>Owns Data View as a commercial product — documentation, tooling, usage visibility, and customer expansion</li>
                 <li>Leads the engineering team running Snowflake POCs and feature evaluations</li>
                 <li>Feeds rollout recommendations to Jason, Raghu, and Amol</li>
                 <li>Drives Cortex validation, data lineage strategy, and DR product requirements</li>
@@ -532,8 +643,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
               <div class="owncolhead" style="color:var(--grd)">Future</div>
               <ul class="blist">
                 <li>Takes full Snowflake strategic ownership as the collective model matures</li>
-                <li>Absorbs the Data Lake team — one leader across the full data platform commercial layer</li>
-                <li>Becomes the definitive owner of how athenahealth's data platform is monetized and governed</li>
+                <li>Data Lake team transitions under this role — one owner of the full commercial data platform layer from ingestion through monetized product</li>
+                <li>Becomes the definitive owner of how athenahealth's data platform is governed and grown commercially</li>
               </ul>
             </div>
           </div>
@@ -542,14 +653,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
         <div class="ownblock" style="border-color:var(--gr)">
           <div class="ownhead" style="background:var(--grl)">
             <div class="ownname" style="color:var(--grd)">ETL &amp; Data Governance Platform + Operational Reporting &amp; AI Reporting</div>
-            <div class="ownrole" style="color:var(--grd)">Owner: Ray Cook · Senior IC · Two mandates</div>
+            <div class="ownrole" style="color:var(--grd)">Owner: Ray Cook · Senior IC · Two mandates · Reports to Jason</div>
           </div>
           <div class="owncols">
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Now — Data Governance</div>
               <ul class="blist">
                 <li>Owns AES platform — Airflow, Astronomer, and the DAG factory</li>
-                <li>Sets the standard for how data teams model and push to Snowflake</li>
+                <li>Sets the gold standard for how data teams model and push to Snowflake</li>
                 <li>Builds pipeline governance guardrails and a self-serve model builder</li>
                 <li>Ray's team already runs Airflow workflows — he is the primary real-world test case from day one</li>
                 <li>Drives IICS sunset</li>
@@ -559,7 +670,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
               <div class="owncolhead" style="color:var(--grd)">Now — Operational Reporting &amp; AI Reporting</div>
               <ul class="blist">
                 <li>Owns the full operational reporting platform — Insights Dashboards, Report Library, Report Builder, Report Inbox</li>
-                <li>Drives the migration strategy from legacy reporting tools to a Generative BI solution</li>
+                <li>Drives the migration from legacy reporting tools to a Generative BI solution</li>
                 <li>Evaluates and selects the Generative BI tool and defines the client migration path</li>
                 <li>Manages the legacy sunset roadmap and stakeholder alignment</li>
               </ul>
@@ -568,14 +679,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
               <div class="owncolhead" style="color:var(--grd)">Future — Data Governance</div>
               <ul class="blist">
                 <li>Platform matures from active builder to governance steward — standards enforced, not negotiated</li>
-                <li>Any data team member builds and deploys gold-standard models without engineering bottlenecks</li>
+                <li>Any data team member builds and deploys gold-standard models without bottlenecks</li>
                 <li>A dedicated Data Governance team builds beneath this mandate as adoption scales</li>
               </ul>
             </div>
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Future — AI Reporting</div>
               <ul class="blist">
-                <li>Legacy reporting is largely sunset — engineering focused forward, not backward</li>
+                <li>Legacy reporting largely sunset — engineering focused forward, not backward</li>
                 <li>Generative BI is the primary client analytics interface for any practice, any size</li>
                 <li>Ray evolves into a full AI reporting product leader — natural language queries, proactive insights, self-serve visualization</li>
                 <li>Ray grows into a multi-team leader across both mandates — the same scaling pattern as Vijay and Bridget</li>
@@ -586,7 +697,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
 
         <div class="ownblock" style="border-color:var(--bl)">
           <div class="ownhead" style="background:var(--bll)">
-            <div class="ownname" style="color:var(--bld)">Behavioral Analytics &amp; Sigma Engineering</div>
+            <div class="ownname" style="color:var(--bld)">Sigma Engineering &amp; Behavioral Analytics</div>
             <div class="ownrole" style="color:var(--bld)">Owner: Bridget Burdick · Manages: Behavioral Analytics PM (New Hire #1)</div>
           </div>
           <div class="owncols">
@@ -596,7 +707,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
                 <li>Personally owns Sigma engineering, RBAC, PHI MOD Reporting, and the legacy sunset portfolio</li>
                 <li>Manages the Behavioral Analytics PM who rebuilds Amplitude and instruments key clinical and financial workflows</li>
                 <li>Establishes "time" as a single trusted metric every PM works from</li>
-                <li>Builds the internal self-serve behavioral intelligence platform</li>
+                <li>Builds the internal self-serve behavioral intelligence platform — the foundation for everything that follows</li>
               </ul>
             </div>
             <div class="owncol">
@@ -620,27 +731,25 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Now</div>
               <ul class="blist">
-                <li>Owns the trust and reliability layer that every other team depends on — Data Lake, all ingestion pipelines, Imports, Migrations, and Config Management</li>
+                <li>Owns the trust and reliability layer every other team depends on — Data Lake, all ingestion pipelines, Imports, Migrations, and Config Management</li>
                 <li>Manages VBC Data Pipelines and Life Sciences Real World Data platform</li>
-                <li>Builds and enforces the tiered pipeline observability framework — client-critical pipelines are monitored and triaged before clients ever notice a problem</li>
+                <li>Builds and enforces the tiered pipeline observability framework — client-critical pipelines triaged before clients notice a problem</li>
                 <li>Sets and enforces DR SLAs across the full data ingestion layer</li>
-                <li>Establishes athenahealth as a data company clients and internal teams can trust implicitly</li>
               </ul>
             </div>
             <div class="owncol">
               <div class="owncolhead" style="color:var(--grd)">Future</div>
               <ul class="blist">
-                <li>Real-time data as a product tier — the data lake moves from nightly batch to continuous refresh, unlocking a new class of time-sensitive analytics products that batch processing cannot support</li>
-                <li>Life Sciences RWD grows from an internal platform into a commercially significant standalone product as the real-world evidence market expands — Vijay owns this as a growth business, not just infrastructure</li>
-                <li>The data reliability brand becomes a genuine competitive differentiator — pipeline observability, data quality standards, and SLA enforcement position athenahealth's data network as the most trusted in ambulatory health IT</li>
-                <li>As the ingestion foundation matures and stabilizes, Data Lake scope transitions to Suhas and Vijay's zone evolves toward higher-order data services and real-time infrastructure</li>
+                <li>Real-time data as a product tier — the data lake moves from nightly batch to continuous refresh, enabling a new class of time-sensitive analytics products</li>
+                <li>Life Sciences RWD grows from an internal platform into a commercially significant standalone product as the real-world evidence market expands</li>
+                <li>The data reliability brand becomes a genuine competitive differentiator — athenahealth's data network positioned as the most trusted in ambulatory health IT</li>
+                <li>Data Lake transitions to Suhas's scope as the commercial platform consolidates; Vijay's zone sharpens around real-time infrastructure and data services</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div><!-- end panel-b -->
-
   </div>
 </div>
 
@@ -656,12 +765,12 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
         <div class="tlitem"><div class="tlarr">→</div><div>Amplitude partnership and build parameters established — <strong>clinicals and athenaConnect workflows instrumented first</strong>, broader rollout plan defined</div></div>
         <div class="tlitem"><div class="tlarr">→</div><div><strong>"Time" is a single trusted metric</strong> every PM works from without reconciling competing sources</div></div>
         <div class="tlitem"><div class="tlarr">→</div><div>AES / Data Governance platform evaluated — <strong>requirements and POC defined</strong>, positioned to build and scale in 2027</div></div>
-        <div class="tlitem"><div class="tlarr">→</div><div>Analytics org relationship actively reset — <strong>shared working model in place</strong>, AES friction points addressed collaboratively</div></div>
+        <div class="tlitem"><div class="tlarr">→</div><div>Analytics org relationship actively reset — <strong>shared working model in place</strong> with Alicia's team, AES friction points addressed collaboratively</div></div>
         <div class="tlitem"><div class="tlarr">→</div><div>Snowflake strategy defined — <strong>Cortex POC underway</strong>, feature evaluation process established, governance baseline documented</div></div>
-        <div class="tlitem"><div class="tlarr">→</div><div>Data View product foundation assessed — <strong>gaps identified</strong>, improvement plan in motion</div></div>
+        <div class="tlitem"><div class="tlarr">→</div><div>Data View product foundation assessed — <strong>gaps identified</strong>, improvement plan in motion, commercial expansion roadmap drafted</div></div>
         <div class="tlitem"><div class="tlarr">→</div><div>Generative BI tool evaluated and selected — <strong>migration plan from legacy reporting platform defined</strong></div></div>
         <div class="tlitem"><div class="tlarr">→</div><div>Pipeline observability framework designed — <strong>client-critical vs internal classification defined</strong></div></div>
-        <div class="tlitem"><div class="tlarr">→</div><div>Legacy reporting sunset roadmap drafted — <strong>committed dates proposed</strong>, stakeholder alignment in progress</div></div>
+        <div class="tlitem"><div class="tlarr">→</div><div>AI for analytics ownership resolved with Sam — <strong>clear swim lanes between Jason's org and Alicia's org on AI roadmap</strong></div></div>
       </div>
       <div class="tlcol">
         <div class="tlphase" style="color:#3C3489">Months 12–24 · Build and differentiate</div>
@@ -670,8 +779,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
         <div class="tlitem"><div class="tlarr">→</div><div>Behavioral intelligence feeds client analytics — <strong>internal and external analytics converge</strong> into one coherent zone story</div></div>
         <div class="tlitem"><div class="tlarr">→</div><div>Data Governance platform in production — <strong>any data team member builds gold-standard models</strong> without an engineering bottleneck</div></div>
         <div class="tlitem"><div class="tlarr">→</div><div>Legacy reporting portfolio largely sunset — <strong>engineering focused on what's next</strong>, not what's old</div></div>
-        <div class="tlitem"><div class="tlarr">→</div><div>Suhas expands to Data Lake scope — <strong>one leader across the full data platform commercial layer</strong></div></div>
-        <div class="tlitem"><div class="tlarr">→</div><div>Zone operates as one — <strong>leaders working across areas</strong>, teams building beneath Ray's two mandates, scaling together</div></div>
+        <div class="tlitem"><div class="tlarr">→</div><div>Snowflake strategic ownership transitions to Suhas — <strong>one owner of the commercial data platform layer</strong> begins to take shape</div></div>
+        <div class="tlitem"><div class="tlarr">→</div><div>Life Sciences RWD on track toward commercial standalone — <strong>$3M+ revenue trajectory established</strong>, product roadmap defined</div></div>
+        <div class="tlitem"><div class="tlarr">→</div><div>Zone operates as one — <strong>leaders working across areas</strong>, teams building beneath mandates, scaling together</div></div>
       </div>
     </div>
   </div>
@@ -684,9 +794,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
     <div class="sl" style="color:var(--tx3)">What we need to execute</div>
     <div class="st" style="font-size:22px">Three decisions to unlock the plan.</div>
     <div class="askgrid">
-      <div class="ask" style="border-color:var(--am);background:#FFFBF0"><div class="asknum" style="color:#854F0B">Decision 1</div><div class="asktit" style="color:#854F0B">Backfill hire — Behavioral Analytics PM</div><div class="askdesc">The single highest-leverage hire in the org this year. Owns Amplitude end to end, builds the internal behavioral intelligence platform, and establishes "time" as a trusted org-wide metric. Reports to Bridget.</div></div>
-      <div class="ask" style="border-color:var(--bl);background:var(--bll)"><div class="asknum" style="color:var(--bld)">Decision 2</div><div class="asktit" style="color:var(--bld)">Version A or Version B — Ray's role</div><div class="askdesc">Version B is the recommended structure. Ray as a senior IC with two mandates — Data Governance PM and Operational Reporting &amp; AI Reporting PM — is the strongest possible org from day one. Version A is the fallback. Leadership alignment with Alicia is required before anything is announced.</div></div>
-      <div class="ask" style="border-color:var(--pu);background:var(--pul)"><div class="asknum" style="color:#3C3489">Decision 3</div><div class="asktit" style="color:#3C3489">Organizational alignment on the Alicia working model</div><div class="askdesc">The boundary between our platform org and the Analytics &amp; AI org needs to be explicit — swim lanes, shared OKRs, and a regular cross-team rhythm. Requires visible leadership alignment to stick.</div></div>
+      <div class="ask" style="border-color:var(--am);background:#FFFBF0"><div class="asknum" style="color:#854F0B">Decision 1</div><div class="asktit" style="color:#854F0B">Backfill hire — Behavioral Analytics PM</div><div class="askdesc">The single highest-leverage hire in the org this year. Owns Amplitude end to end, builds the internal behavioral intelligence platform, and establishes "time" as a trusted org-wide metric. Reports to Bridget in both versions.</div></div>
+      <div class="ask" style="border-color:var(--bl);background:var(--bll)"><div class="asknum" style="color:var(--bld)">Decision 2</div><div class="asktit" style="color:var(--bld)">Version A or Version B — Ray's role</div><div class="askdesc">Both are real options. Version B brings Ray onto the team as a senior IC with two mandates — stronger from day one, cleaner accountability. Version A keeps Ray in Alicia's org as a named embedded SME across both governance and reporting workstreams. The deciding factor is one conversation about the org move.</div></div>
+      <div class="ask" style="border-color:var(--pu);background:var(--pul)"><div class="asknum" style="color:#3C3489">Decision 3</div><div class="asktit" style="color:#3C3489">AI for analytics — who owns the roadmap</div><div class="askdesc">The boundary between Jason's platform org and Alicia's analytics org is clear on most dimensions. The one open question is AI for analytics — Alicia's org is leaning on Sigma's native AI functions while the platform strategy points toward building from the ground up. This needs resolution at the leadership level before either team commits to a roadmap.</div></div>
     </div>
   </div>
 </div>
@@ -698,8 +808,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-
     <div class="st">What data as an advantage actually looks like.</div>
     <div class="nstext">
       <p>A small practice in rural Ohio logs into athenahealth, asks how their revenue cycle performed last month compared to practices like theirs, and gets a clear answer in seconds — no account manager call, no data analyst, no pre-built dashboard.</p>
-      <p>An athenahealth PM sees whether a new feature is saving clinicians time — the most important metric — without waiting three weeks for an analytics request to come back.</p>
+      <p>An athenahealth PM sees whether a new feature is saving clinicians time — the most important metric in the org — without waiting three weeks for an analytics request to come back.</p>
       <p>A data team member builds a new gold-standard model in days, not months, because the governance platform is in place and bad data cannot reach production.</p>
+      <p>Snowflake, Data View, and the Data Lake sit under one owner — one commercial data platform, governed end to end, monetized deliberately, and trusted completely.</p>
       <p>That is what this organization is being built to deliver.</p>
     </div>
   </div>
@@ -711,6 +822,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var tabB = document.getElementById('tab-b');
   var panelA = document.getElementById('panel-a');
   var panelB = document.getElementById('panel-b');
+  var tabDesc = document.getElementById('tab-desc');
+
+  var descA = 'Ray remains in Alicia\'s org as a named, structured SME with defined involvement across data governance and operational reporting. Bridget carries the wider mandate including operational reporting. A dedicated Data Governance Specialist is hired directly.';
+  var descB = 'Ray joins the team as a senior IC with two mandates — Data Governance and Operational Reporting/AI Reporting. Bridget\'s mandate sharpens to Sigma engineering and behavioral analytics. Requires one leadership conversation about the org move.';
 
   function showA() {
     panelA.classList.add('active');
@@ -719,6 +834,7 @@ document.addEventListener('DOMContentLoaded', function() {
     tabA.style.color = '#fff';
     tabB.style.background = '#fff';
     tabB.style.color = '#534AB7';
+    tabDesc.textContent = descA;
   }
 
   function showB() {
@@ -728,6 +844,7 @@ document.addEventListener('DOMContentLoaded', function() {
     tabB.style.color = '#fff';
     tabA.style.background = '#fff';
     tabA.style.color = '#534AB7';
+    tabDesc.textContent = descB;
   }
 
   tabA.addEventListener('click', showA);
